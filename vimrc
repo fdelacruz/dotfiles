@@ -257,7 +257,7 @@ nnoremap <c-l> <c-w>l
 imap <c-c> <esc>
 " Clear the search buffer when hitting rveturn
 function! MapCR()
-  nnoremap <cr> :nohlsearch<cr>
+  nnoremap <cr><cr> :nohlsearch<cr>
 endfunction
 call MapCR()
 nnoremap <leader><leader> <c-^>

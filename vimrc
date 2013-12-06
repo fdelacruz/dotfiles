@@ -27,6 +27,7 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-fugitive'

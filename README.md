@@ -14,9 +14,10 @@ git clone git@github.com:fdelacruz/dotfiles.git .dotfiles
 * create symbolic links to config files
 
 ```
-ls -s .dotfiles/vimrc .vimrc
-ls -s .dotfiles/zshrc .zshrc
-ls -s .dotfiles/vim .vim
+ln -s .dotfiles/zshrc .zshrc
+ln -s .dotfiles/vimrc .vimrc
+ln -s .dotfiles/vim .vim
+ln -s .dotfiles/tmux.conf .tmux.conf
 ```
 
 * install oh-my-zsh

@@ -132,6 +132,9 @@ set dictionary+=/usr/share/dict/words "from Hacking Vim
 
 set mouse=nv "use mouse in normal and visual mode only
 
+" make a mark, indent whole file and come back to mark (Ben Orenstein)
+map <Leader>i mmgg=G`m<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

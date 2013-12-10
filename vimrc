@@ -15,6 +15,8 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 
+Bundle 'sjl/gundo.vim'
+
 Bundle 'davidhalter/jedi-vim'
 Bundle 'nvie/vim-flake8'
 
@@ -182,6 +184,7 @@ augroup END
 :let g:solarized_contrast='high'
 :let g:solarized_visibility='low'
 :colorscheme solarized
+"
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " POWERLINE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -235,6 +238,12 @@ map <C-n> :NERDTreeToggle<CR>
 " Ack
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>A :Ack 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Gundo
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <F5> :GundoToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS

@@ -66,6 +66,11 @@ nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
 set hidden
 " remember more commands and search history
 set history=10000
+
+" persistent undo
+set undofile
+set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 " python specific settings
 set textwidth=80  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
@@ -235,7 +240,6 @@ map <C-n> :NERDTreeToggle<CR>
 " Ack
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>A :Ack 
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Gundo

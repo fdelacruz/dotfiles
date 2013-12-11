@@ -134,9 +134,6 @@ set dictionary+=/usr/share/dict/words "from Hacking Vim
 
 set mouse=nv "use mouse in normal and visual mode only
 
-" make a mark, indent whole file and come back to mark (Ben Orenstein)
-map <Leader>i mmgg=G`m<CR>
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -248,7 +245,10 @@ nnoremap <F5> :GundoToggle<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Tab mappings.
+" Indent file
+map <Leader>i mmgg=G`m<CR>
+
+" Tab mappings
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
 map <leader>tc :tabclose<cr>

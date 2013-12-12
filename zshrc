@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:$PATH
+# export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:$PATH
 
 alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.rename(f, f.gsub(a, b)) }"'
 
@@ -70,7 +70,11 @@ export RI="--format ansi --width 70"
 # rspec in color with [d]ocumentation (group and example names) formatting
 rspec_color() { rspec "$*" --color -f d; }
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# temporary fix to the zsh and tmux path problem, via http://bit.ly/1f8BYcs
+export PATH=/Users/fdelacruz/.rbenv/shims:/Users/fdelacruz/.rbenv/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+# export PATH=/usr/local/bin:$PATH
+
 eval "$(rbenv init -)"
 
 #Rails development environment

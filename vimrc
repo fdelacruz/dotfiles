@@ -71,6 +71,11 @@ set history=10000
 set undofile
 set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
+" store temporary files in a central spot
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+
 " python specific settings
 set textwidth=80  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
@@ -109,10 +114,6 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " keep more context when scrolling off the end of a buffer
 set scrolloff=3
-" Store temporary files in a central spot
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 " display incomplete commands

@@ -7,10 +7,6 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="fdelacruz"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -37,26 +33,11 @@ plugins=(rails git tmux osx)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-
-# export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:$PATH
-
 alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.rename(f, f.gsub(a, b)) }"'
-
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
-
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
-
 alias killDock='killall Dock'
-
-# PostgreSQL 
-
-alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-
-alias pg-status='pg_ctl -D /usr/local/var/postgres status'
 
 # IRC 
 # IRCNICK=slocate
@@ -70,11 +51,11 @@ export RI="--format ansi --width 70"
 # rspec in color with [d]ocumentation (group and example names) formatting
 rspec_color() { rspec "$*" --color -f d; }
 
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# temporary fix to the zsh and tmux path problem, via http://bit.ly/1f8BYcs
-export PATH=/Users/fdelacruz/.rbenv/shims:/Users/fdelacruz/.rbenv/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-# export PATH=/usr/local/bin:$PATH
+# export PATH=/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:$PATH
 
+# temporary fix to the zsh and tmux path problem, via http://bit.ly/1f8BYcs
+export PATH=/Users/fdelacruz/.rbenv/shims:/Users/fdelacruz/.rbenv/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+# export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 #Rails development environment

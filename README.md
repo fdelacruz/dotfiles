@@ -1,6 +1,6 @@
 # dotfiles
 
-This repo is a collection of my zsh, vim and other customizations 
+This repo is a collection of my zsh, vim, tmux and other customizations 
 
 ## Installation
 
@@ -16,7 +16,6 @@ git clone git@github.com:fdelacruz/dotfiles.git .dotfiles
 ```
 ln -s .dotfiles/zshrc .zshrc
 ln -s .dotfiles/vimrc .vimrc
-ln -s .dotfiles/vim .vim
 ln -s .dotfiles/tmux.conf .tmux.conf
 ln -s .dotfiles/tmux-powerlinerc .tmux-powerlinerc
 ```
@@ -30,7 +29,8 @@ git clone git@github.com:fdelacruz/oh-my-zsh.git .oh-my-zsh
 * install Vundle
 
 ```
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+mkdir -p .vim/bundle
+git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 ```
 
 * install bundles: open vim and fire command `:BundleInstall`

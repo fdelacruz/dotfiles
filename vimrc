@@ -183,6 +183,7 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-colors-solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax enable
 set background=dark
 let g:solarized_contrast='high'
 let g:solarized_visibility='low'

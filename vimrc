@@ -72,10 +72,10 @@ silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set undodir=~/.vim/backups
 set undofile
 
-" store temporary files in a central spot
-set backup
-set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
-set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+" do not store temporary files
+set noswapfile
+set nobackup
+set nowb
 
 " python specific settings
 set textwidth=80  " lines longer than 79 columns will be broken

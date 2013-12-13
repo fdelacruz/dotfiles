@@ -67,9 +67,10 @@ set hidden
 " remember more commands and search history
 set history=10000
 
-" persistent undo
+" persisted undo
+silent !mkdir ~/.vim/backups > /dev/null 2>&1
+set undodir=~/.vim/backups
 set undofile
-set undodir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " store temporary files in a central spot
 set backup
@@ -192,7 +193,7 @@ call togglebg#map("<F6>")
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " POWERLINE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='fancy'
 set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

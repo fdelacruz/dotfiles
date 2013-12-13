@@ -182,12 +182,13 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vim-colors-solarized
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" :set background=light  " for Solarized Light
-:set background=dark   " for Solarized Dark
-:let g:solarized_contrast='high'
-:let g:solarized_visibility='low'
-:colorscheme solarized
-"
+set background=dark
+let g:solarized_contrast='high'
+let g:solarized_visibility='low'
+colorscheme solarized
+" toggle background function
+call togglebg#map("<F6>")
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " POWERLINE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

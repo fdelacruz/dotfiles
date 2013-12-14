@@ -44,6 +44,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'kana/vim-textobj-user'
 Bundle 'mileszs/ack.vim'
+Bundle 'vim-ruby/vim-ruby'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION

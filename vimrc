@@ -7,6 +7,8 @@
 set nocompatible
 filetype off
 
+let mapleader=","
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -135,8 +137,6 @@ filetype plugin indent on
 set wildmode=full
 " command-line completion operates in an enhanced mode
 set wildmenu
-let mapleader=","
-
 set dictionary+=/usr/share/dict/words "from Hacking Vim
 
 set mouse=nv "use mouse in normal and visual mode only

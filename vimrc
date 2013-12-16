@@ -131,11 +131,10 @@ syntax on
 " 'cindent' is on in C files, etc.
 " Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
-" use emacs-style tab completion when selecting files, etc
-set wildmode=longest,list
-" make tab completion for files/buffers act like bash
+" complete first full match, next match, etc.  (the default)
+set wildmode=full
+" command-line completion operates in an enhanced mode
 set wildmenu
-
 let mapleader=","
 
 set dictionary+=/usr/share/dict/words "from Hacking Vim

@@ -285,7 +285,7 @@ nnoremap <c-l> <c-w>l
 imap <c-c> <esc>
 " Clear the search buffer when hitting rveturn
 function! MapCR()
-  nnoremap <cr><cr> :nohlsearch<cr>
+  nnoremap <cr> :nohlsearch<cr>
 endfunction
 call MapCR()
 nnoremap <leader><leader> <c-^>
@@ -449,7 +449,7 @@ nnoremap <leader>. :call OpenTestAlternate()<cr>
 " RUNNING TESTS 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! MapCR()
-  nnoremap <cr> :call RunTestFile()<cr>
+  nnoremap <cr><cr> :call RunTestFile()<cr>
 endfunction
 call MapCR()
 nnoremap <leader>T :call RunNearestTest()<cr>

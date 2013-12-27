@@ -61,6 +61,15 @@ eval "$(rbenv init -)"
 # Rails development environment
 export RAILS_ENV=development
 
-# vi-mode settings
+#                               vi-mode settings
+
 # kill the  delay
 export KEYTIMEOUT=1
+
+# incremental history search
+bindkey -M viins '^R' history-incremental-search-backward
+bindkey -M vicmd '^R' history-incremental-search-backward
+
+bindkey -M viins '^F' history-incremental-search-forward
+bindkey -M vicmd '^F' history-incremental-search-forward
+

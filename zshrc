@@ -58,5 +58,9 @@ export PATH=/Users/fdelacruz/.rbenv/shims:/Users/fdelacruz/.rbenv/bin:/Library/F
 # export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-#Rails development environment
+# Rails development environment
 export RAILS_ENV=development
+
+# vi-mode settings
+# kill the  delay
+export KEYTIMEOUT=1

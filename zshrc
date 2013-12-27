@@ -73,3 +73,6 @@ bindkey -M vicmd '^R' history-incremental-search-backward
 bindkey -M viins '^F' history-incremental-search-forward
 bindkey -M vicmd '^F' history-incremental-search-forward
 
+# history navigation
+bindkey '^P' up-history
+bindkey '^N' down-history

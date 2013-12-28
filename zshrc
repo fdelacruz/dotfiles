@@ -76,3 +76,6 @@ bindkey -M vicmd '^F' history-incremental-search-forward
 # history navigation
 bindkey '^P' up-history
 bindkey '^N' down-history
+
+# insert last word with "alt+."
+bindkey '\e.' insert-last-word

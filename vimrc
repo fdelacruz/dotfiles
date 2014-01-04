@@ -102,10 +102,6 @@ set cursorline
 set cmdheight=1
 set switchbuf=useopen
 "set showtabline=2
-
-"relative line numbers http://bit.ly/yagFdB
-" autocmd InsertEnter * :set number
-" autocmd InsertLeave * :set relativenumber
 set number
 set numberwidth=3
 set winwidth=80
@@ -263,6 +259,18 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Toggle relative line number
+function! NumberToggle()
+  if(&relativenumber)
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <C-n> :call NumberToggle()<cr>
+
 " Indent file
 map <Leader>i mmgg=G`m<CR>
 

@@ -61,7 +61,7 @@ eval "$(rbenv init -)"
 # Rails development environment
 export RAILS_ENV=development
 
-#                               vi-mode settings
+# vi-mode
 
 # kill the  delay
 export KEYTIMEOUT=1

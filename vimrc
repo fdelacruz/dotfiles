@@ -250,7 +250,6 @@ map <leader>A :Ack
 nnoremap <F5> :GundoToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SnipMate
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 imap <C-J> <Plug>snipMateNextOrTrigger
@@ -422,9 +421,6 @@ command! OpenChangedFiles :call OpenChangedFiles()
 " Insert the current time
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
-
-" % to bounce from do to end etc.
-runtime! macros/matchit.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SWITCH BETWEEN TEST AND PRODUCTION CODE

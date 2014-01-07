@@ -293,7 +293,7 @@ nnoremap <c-l> <c-w>l
 
 " Can't be bothered to understand ESC vs <c-c> in insert mode
 imap <c-c> <esc>
-" Clear the search buffer when hitting rveturn
+" Clear the search buffer when hitting return
 function! MapCR()
   nnoremap <cr> :nohlsearch<cr>
 endfunction
@@ -327,7 +327,7 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
-
+" Improve up/down movement on wrapped lines
 nnoremap j gj
 nnoremap k gk
 

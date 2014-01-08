@@ -53,36 +53,27 @@ Bundle 'thoughtbot/vim-rspec'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" automatic reloading .vimrc
-"autocmd! bufwritepost .vimrc source %
-
-" Better copy & paste
-" When you want to paste large blocks of code into vim, press F2 before you
-" paste. At the bottom you should see ``-- INSERT (paste) --``.
-
-"set pastetoggle=<F2>
 set clipboard+=unnamed
 
 " Toggle paste mode
 nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
 
-" allow unsaved background buffers and remember marks/undo for them
+" Allow unsaved background buffers and remember marks/undo for them
 set hidden
-" remember more commands and search history
+" Remember more commands and search history
 set history=10000
 
-" persisted undo
+" Persisted undo
 silent !mkdir ~/.vim/backups > /dev/null 2>&1
 set undodir=~/.vim/backups
 set undofile
 
-" do not store temporary files
+" Do not store temporary files
 set noswapfile
 set nobackup
 set nowb
 
-" python specific settings
+" Python specific settings
 set textwidth=80  " lines longer than 79 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " an hard TAB displays as 4 columns
@@ -96,31 +87,28 @@ set laststatus=2
 set showmatch
 set incsearch 
 set hlsearch 
-" make searches case-sensitive only if they contain upper-case characters
+" Make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
-" highlight current line
+" Highlight current line
 set cursorline
 set cmdheight=1
 set switchbuf=useopen
-"set showtabline=2
 set number
 set numberwidth=3
 set winwidth=80
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
-
-" change cursor shape in different modes
+" Change cursor shape in different modes
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-
-" keep more context when scrolling off the end of a buffer
+" Keep more context when scrolling off the end of a buffer
 set scrolloff=3
-" allow backspacing over everything in insert mode
+" Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-" display incomplete commands
+" Display incomplete commands
 set showcmd
-" don't display the current mode (Insert, Visual, Replace)
+" Don't display the current mode (Insert, Visual, Replace)
 " in the status line. This info is already shown in the 
 "                     " Powerline status bar.
 set noshowmode
@@ -131,9 +119,9 @@ syntax on
 " 'cindent' is on in C files, etc.
 " Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
-" complete first full match, next match, etc.  (the default)
+" Complete first full match, next match, etc.  (the default)
 set wildmode=full
-" command-line completion operates in an enhanced mode
+" Command-line completion operates in an enhanced mode
 set wildmenu
 set dictionary+=/usr/share/dict/words "from Hacking Vim
 
@@ -152,7 +140,7 @@ augroup vimrcEx
         \   exe "normal g`\"" |
         \ endif
 
-  "for ruby, autoindent with two spaces, always expand tabs
+  "For ruby, autoindent with two spaces, always expand tabs
   autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
@@ -186,7 +174,7 @@ set background=dark
 let g:solarized_contrast='high'
 let g:solarized_visibility='low'
 colorscheme solarized
-" toggle background function
+" Toggle background function
 call togglebg#map("<F6>")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -299,15 +287,13 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
-" Can't be bothered to understand ESC vs <c-c> in insert mode
-imap <c-c> <esc>
 " Clear the search buffer when hitting return
 function! MapCR()
   nnoremap <cr> :nohlsearch<cr>
 endfunction
 call MapCR()
 
-" Toggle between current and alternate file
+" Toggle current and alternate file
 nnoremap <leader><leader> <c-^>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -328,14 +314,14 @@ inoremap <s-tab> <c-n>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ARROW KEYS ARE UNACCEPTABLE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+nnoremap <up>     <nop>
+nnoremap <down>   <nop>
+nnoremap <left>   <nop>
+nnoremap <right>  <nop>
+inoremap <up>     <nop>
+inoremap <down>   <nop>
+inoremap <left>   <nop>
+inoremap <right>  <nop>
 
 " Improve up/down movement on wrapped lines
 nnoremap j gj

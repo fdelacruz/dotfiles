@@ -84,7 +84,6 @@ set list listchars=tab:»·,trail:·,extends:⟩,precedes:⟨ " display extra wh
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
-set laststatus=2
 set showmatch
 set incsearch 
 set hlsearch 
@@ -109,10 +108,6 @@ set scrolloff=3
 set backspace=indent,eol,start
 " Display incomplete commands
 set showcmd
-" Don't display the current mode (Insert, Visual, Replace)
-" in the status line. This info is already shown in the 
-"                     " Powerline status bar.
-set noshowmode
 " Enable highlighting for syntax
 syntax on
 " Enable file type detection.
@@ -189,6 +184,7 @@ set term=xterm-256color
 set termencoding=utf-8
 
 set laststatus=2
+set noshowmode
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP

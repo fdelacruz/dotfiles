@@ -6,6 +6,9 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 filetype off
+" Enable file type detection.
+" Also load indent files, to automatically do language-dependent indenting.
+filetype plugin indent on
 
 let mapleader=","
 
@@ -110,11 +113,6 @@ set backspace=indent,eol,start
 set showcmd
 " Enable highlighting for syntax
 syntax on
-" Enable file type detection.
-" Use the default filetype settings, so that mail gets 'tw' set to 72,
-" 'cindent' is on in C files, etc.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype plugin indent on
 " Complete first full match, next match, etc.  (the default)
 set wildmode=full
 " Command-line completion operates in an enhanced mode

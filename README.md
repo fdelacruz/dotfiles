@@ -56,14 +56,8 @@ brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 git clone git@github.com:fdelacruz/tmux-powerline.git
 ```
 
-**Note:** You need a patched font to be able to use the symbols in the 
-statusline using vim-powerline. An experimental Python/fontforge-based font patcher is included in the ``fontpatcher`` directory. See ``fontpatcher/README.rst`` for usage
-instructions.
+**Note:** You need a patched font to be able to use the symbols in the statusline using powerline. You can get them [here](https://github.com/Lokaltog/powerline-fonts). Use OSX's Font Book to install it.
 
-**Note:** If you don't have FontForge, install it  with  Homebrew: ``brew install fontforge``
-But, you are going to need XQuartz first. Installers may be found at: https://xquartz.macosforge.org
-
-Screenshots
+Screenshot
 -----------
-![tmux-powerline](http://i.imgur.com/bkgbd1Z.png "tmux-powerline")
-![vim-powerline inside tmux-powerline](http://i.imgur.com/JatONQB.png "vim-powerline inside tmux-powerline")
+![Screenshot](http://i.imgur.com/y759S3R.png)

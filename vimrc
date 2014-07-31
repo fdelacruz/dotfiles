@@ -134,7 +134,7 @@ augroup vimrcEx
         \   exe "normal g`\"" |
         \ endif
 
-  "For ruby, autoindent with two spaces, always expand tabs
+  " For ruby, autoindent with two spaces, always expand tabs
   autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
@@ -155,6 +155,10 @@ augroup vimrcEx
   " to run commands there.
   autocmd! CmdwinEnter * :unmap <cr>
   autocmd! CmdwinLeave * :call MapCR()
+
+  " Automatic fold settings for specific files
+  autocmd FileType ruby setlocal foldmethod=syntax
+
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

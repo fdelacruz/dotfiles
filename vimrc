@@ -6,53 +6,56 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
 filetype off
-" Enable file type detection.
-" Also load indent files, to automatically do language-dependent indenting.
-filetype plugin indent on
 
 let mapleader=","
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'kien/ctrlp.vim'
-Bundle 'jasoncodes/ctrlp-modified.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jasoncodes/ctrlp-modified.vim'
 
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 
-Bundle 'davidhalter/jedi-vim'
-Bundle 'nvie/vim-flake8'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'nvie/vim-flake8'
 
-Bundle 'tpope/vim-vinegar'
-Bundle 'scrooloose/syntastic'
+Plugin 'tpope/vim-vinegar'
+Plugin 'scrooloose/syntastic'
 
-Bundle 'MarcWeber/vim-addon-mw-utils'
-Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-unimpaired'
 
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Raimondi/delimitMate'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'kana/vim-textobj-user'
-Bundle 'mileszs/ack.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'jgdavey/tslime.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Raimondi/delimitMate'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'kana/vim-textobj-user'
+Plugin 'mileszs/ack.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'jgdavey/tslime.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION

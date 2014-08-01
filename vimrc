@@ -172,7 +172,8 @@ augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax enable
 set background=dark
-let g:solarized_contrast='high'
+let g:solarized_contrast='normal'
+let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'
 colorscheme solarized
 " Toggle background function

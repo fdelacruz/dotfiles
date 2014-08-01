@@ -60,4 +60,4 @@ git clone git@github.com:fdelacruz/tmux-powerline.git
 
 Screenshot
 -----------
-![Screenshot](http://i.imgur.com/y759S3R.png)
+![Screenshot](http://i.imgur.com/444dn64.png)

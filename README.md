@@ -30,12 +30,14 @@ git clone git@github.com:fdelacruz/oh-my-zsh.git .oh-my-zsh
 
 ```
 mkdir -p .vim/bundle
-git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
+git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
 ```
 
-* install bundles: open vim and fire command `:BundleInstall`
+* install bundles: open vim and fire command `:PluginInstall`
 
-* in the future: open vim and run `:BundleInstall!` (note the exclamation mark) to download the latest updates to bundles
+* in the future: open vim and run `:PluginInstall!` (note the exclamation mark) to download the latest updates to bundles
+
+* to install from command line: `vim +PluginInstall +qall`
 
 * install tmux
 

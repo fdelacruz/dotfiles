@@ -292,6 +292,9 @@ nnoremap <C-n> :call NumberToggle()<cr>
 " Indent file
 map <Leader>i mmgg=G`m<CR>
 
+" Clean trailing whitespace
+nnoremap <leader>ww mz:%s/\s\+$//<cr>:let @/=''<cr>`z
+
 " Tab mappings
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit

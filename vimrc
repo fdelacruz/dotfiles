@@ -63,9 +63,6 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set clipboard+=unnamed
 
-" Toggle paste mode
-nmap <silent> ,p :set invpaste<CR>:set paste?<CR>
-
 " Allow unsaved background buffers and remember marks/undo for them
 set hidden
 " Remember more commands and search history

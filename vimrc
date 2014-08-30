@@ -53,6 +53,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'hwartig/vim-seeing-is-believing'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -270,6 +271,21 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-seeing-is-believing
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Insert evaluated result with mark.
+nmap <buffer> <F4> <Plug>(seeing-is-believing-run)
+xmap <buffer> <F4> <Plug>(seeing-is-believing-run)
+imap <buffer> <F4> <Plug>(seeing-is-believing-run)
+
+" Insert ' # =>' into end of line or delete ' # =>' if it already exist.
+nmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+xmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+imap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS

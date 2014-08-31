@@ -53,7 +53,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'hwartig/vim-seeing-is-believing'
+Plugin 't9md/vim-ruby-xmpfilter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -177,7 +177,7 @@ let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'
 colorscheme solarized
 " Toggle background function
-call togglebg#map("<F6>")
+call togglebg#map("<F4>")
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " POWERLINE
@@ -273,18 +273,30 @@ map <Leader>a :call RunAllSpecs()<CR>
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim-seeing-is-believing
+" Seeing Is Believing
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:xmpfilter_cmd = "seeing_is_believing"
 
 " Insert evaluated result with mark.
-nmap <buffer> <F4> <Plug>(seeing-is-believing-run)
-xmap <buffer> <F4> <Plug>(seeing-is-believing-run)
-imap <buffer> <F4> <Plug>(seeing-is-believing-run)
+autocmd FileType ruby nmap <buffer> <F6> <Plug>(seeing_is_believing-run)
+autocmd FileType ruby xmap <buffer> <F6> <Plug>(seeing_is_believing-run)
+autocmd FileType ruby imap <buffer> <F6> <Plug>(seeing_is_believing-run)
 
 " Insert ' # =>' into end of line or delete ' # =>' if it already exist.
-nmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
-xmap <buffer> <F3> <Plug>(seeing-is-believing-mark)
-imap <buffer> <F3> <Plug>(seeing-is-believing-mark)
+autocmd FileType ruby nmap <buffer> <F7> <Plug>(seeing_is_believing-mark)
+autocmd FileType ruby xmap <buffer> <F7> <Plug>(seeing_is_believing-mark)
+autocmd FileType ruby imap <buffer> <F7> <Plug>(seeing_is_believing-mark)
+
+" Clean all marks in the buffer.
+autocmd FileType ruby nmap <buffer> <F8> <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby xmap <buffer> <F8> <Plug>(seeing_is_believing-clean)
+autocmd FileType ruby imap <buffer> <F8> <Plug>(seeing_is_believing-clean)
+
+" xmpfilter compatible
+autocmd FileType ruby nmap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
+autocmd FileType ruby xmap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
+autocmd FileType ruby imap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -31,6 +31,7 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'ervandew/supertab'
 
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-rake'

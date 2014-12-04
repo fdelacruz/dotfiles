@@ -29,8 +29,6 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/syntastic'
 
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'

@@ -47,7 +47,6 @@ Plugin 'tpope/vim-unimpaired'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'kana/vim-textobj-user'
@@ -351,7 +350,7 @@ function! MapCR()
 endfunction
 call MapCR()
 
-" Toggle current and alternate file
+" Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

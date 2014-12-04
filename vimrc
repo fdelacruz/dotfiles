@@ -79,8 +79,7 @@ set noswapfile
 set nobackup
 set nowb
 
-" Python specific settings
-set textwidth=80  " lines longer than 79 columns will be broken
+set textwidth=80  " lines longer than 80 columns will be broken
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " an hard TAB displays as 4 columns
 set expandtab     " insert spaces when hitting TABs

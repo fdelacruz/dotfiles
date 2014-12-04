@@ -124,8 +124,10 @@ set wildmode=full
 " Command-line completion operates in an enhanced mode
 set wildmenu
 set dictionary+=/usr/share/dict/words "from Hacking Vim
-
 set mouse=nv "use mouse in normal and visual mode only
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS

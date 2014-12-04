@@ -26,7 +26,6 @@ Plugin 'sjl/gundo.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'nvie/vim-flake8'
 
-Plugin 'tpope/vim-vinegar'
 Plugin 'scrooloose/syntastic'
 
 Plugin 'SirVer/ultisnips'
@@ -42,6 +41,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-vinegar'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}

@@ -79,7 +79,10 @@ set noswapfile
 set nobackup
 set nowb
 
-set textwidth=80  " lines longer than 80 columns will be broken
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+
 set shiftwidth=4  " operation >> indents 4 columns; << unindents 4 columns
 set tabstop=4     " an hard TAB displays as 4 columns
 set expandtab     " insert spaces when hitting TABs

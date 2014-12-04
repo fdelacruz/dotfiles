@@ -7,6 +7,8 @@
 set nocompatible
 filetype off
 
+set shell=/bin/sh
+
 let mapleader=","
 
 " set the runtime path to include Vundle and initialize

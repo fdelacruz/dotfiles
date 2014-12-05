@@ -103,7 +103,6 @@ set cmdheight=1
 set switchbuf=useopen
 set number
 set numberwidth=3
-set winwidth=80
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=

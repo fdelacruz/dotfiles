@@ -167,6 +167,9 @@ augroup vimrcEx
   " Automatic fold settings for specific files
   autocmd FileType ruby setlocal foldmethod=syntax
 
+" Resize splits when the window is resized
+  autocmd VimResized * :wincmd =
+
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

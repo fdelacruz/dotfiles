@@ -39,6 +39,10 @@ alias lockDock='defaults write com.apple.dock contents-immutable -bool true && k
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 alias killDock='killall Dock'
 
+# PostgreSQL
+alias start_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias stop_pg="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
 # IRC 
 # IRCNICK=slocate
 IRCNICK=fdelacruz
@@ -62,7 +66,6 @@ eval "$(rbenv init -)"
 export RAILS_ENV=development
 
 # vi-mode
-
 # kill the  delay
 export KEYTIMEOUT=1
 

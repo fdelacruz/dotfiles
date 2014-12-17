@@ -120,6 +120,8 @@ end
 set scrolloff=3
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+" Show dollar sign at end of text to be changed.
+set cpoptions+=$
 " Display incomplete commands
 set showcmd
 " Enable highlighting for syntax

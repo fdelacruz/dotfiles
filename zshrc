@@ -43,6 +43,12 @@ alias killDock='killall Dock'
 alias start_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias stop_pg="pg_ctl -D /usr/local/var/postgres stop -m fast"
 
+# serve current directory from command line
+function serve {
+  port="${1:-4000}"
+  ruby -run -e httpd . -p $port
+}
+
 # IRC 
 # IRCNICK=slocate
 IRCNICK=fdelacruz

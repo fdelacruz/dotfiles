@@ -95,8 +95,8 @@ set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
 set showmatch
-set incsearch 
-set hlsearch 
+set incsearch
+set hlsearch
 " Make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 " Highlight current line
@@ -155,7 +155,7 @@ augroup vimrcEx
   autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
-  autocmd! BufRead,BufNewFile *.sass setfiletype sass 
+  autocmd! BufRead,BufNewFile *.sass setfiletype sass
 
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
   autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
@@ -261,7 +261,7 @@ let g:syntastic_html_tidy_ignore_errors=[
             \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Vim-textobj-rubyblock 
+" Vim-textobj-rubyblock
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 runtime macros/matchit.vim
 
@@ -407,6 +407,13 @@ inoremap <right>  <nop>
 " Improve up/down movement on wrapped lines
 nnoremap j gj
 nnoremap k gk
+
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " OPEN FILES IN DIRECTORY OF CURRENT FILE

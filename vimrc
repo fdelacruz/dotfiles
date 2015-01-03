@@ -333,18 +333,6 @@ autocmd FileType ruby imap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" Toggle relative line number
-function! NumberToggle()
-  if(&relativenumber)
-    set norelativenumber
-    set number
-  else
-    set relativenumber
-  endif
-endfunc
-nnoremap <C-n> :call NumberToggle()<cr>
-
 " Indent file
 map <Leader>i mmgg=G`m<CR>
 

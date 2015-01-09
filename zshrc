@@ -74,6 +74,10 @@ export RAILS_ENV=development
 # kill the  delay
 export KEYTIMEOUT=1
 
+# set default editor
+export EDITOR=vim
+export VISUAL=vim
+
 # incremental history search
 bindkey -M viins '^R' history-incremental-search-backward
 bindkey -M vicmd '^R' history-incremental-search-backward

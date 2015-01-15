@@ -63,3 +63,7 @@ git clone git@github.com:fdelacruz/tmux-powerline.git
 ## Screenshot
 
 ![Screenshot](http://i.imgur.com/444dn64.png)
+
+## LICENSE
+
+dotfiles is © 2013-2015 Francisco De La Cruz. It is free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.

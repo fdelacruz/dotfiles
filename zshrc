@@ -91,9 +91,12 @@ bindkey -M vicmd '^R' history-incremental-search-backward
 bindkey -M viins '^F' history-incremental-search-forward
 bindkey -M vicmd '^F' history-incremental-search-forward
 
-# history navigation
-bindkey '^P' up-history
-bindkey '^N' down-history
+# search history for the current line up to the cursor
+bindkey -M viins '^P' history-beginning-search-backward
+bindkey -M vicmd '^P' history-beginning-search-backward
+
+bindkey -M viins '^N' history-beginning-search-forward
+bindkey -M vicmd '^N' history-beginning-search-forward
 
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word

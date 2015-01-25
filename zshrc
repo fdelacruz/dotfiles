@@ -100,3 +100,6 @@ bindkey -M vicmd '^N' history-beginning-search-forward
 
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word
+
+# repeat the previous shell-word ($WORDCHARS) with "alt+="
+bindkey '\e=' copy-prev-shell-word

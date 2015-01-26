@@ -103,3 +103,6 @@ bindkey '\e.' insert-last-word
 
 # repeat the previous shell-word ($WORDCHARS) with "alt+="
 bindkey '\e=' copy-prev-shell-word
+
+# do history expansion on space
+bindkey ' ' magic-space

@@ -106,3 +106,15 @@ bindkey '\e=' copy-prev-shell-word
 
 # do history expansion on space
 bindkey ' ' magic-space
+
+# suspend AND resume job with single shortcut
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    fg
+    zle redisplay
+  else
+    zle push-input
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z

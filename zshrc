@@ -84,6 +84,11 @@ export KEYTIMEOUT=1
 export EDITOR=vim
 export VISUAL=vim
 
+# node/npm
+export NPM_PACKAGES=$HOME/.npm-packages
+export NODE_PATH=$NPM_PACKAGES/lib/node_modules:$NODE_PATH
+export PATH=$NPM_PACKAGES/bin:$PATH
+
 # incremental history search
 bindkey -M viins '^R' history-incremental-search-backward
 bindkey -M vicmd '^R' history-incremental-search-backward

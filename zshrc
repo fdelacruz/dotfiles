@@ -34,7 +34,7 @@ export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color [nya
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx vi-mode history-substring-search)
+plugins=(git osx vi-mode zaw)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,20 +93,6 @@ export PATH=$NPM_PACKAGES/bin:$PATH
 export MONGO_PATH=/usr/local/mongodb
 export PATH=$PATH:$MONGO_PATH/bin
 
-# incremental history search
-bindkey -M viins '^R' history-incremental-search-backward
-bindkey -M vicmd '^R' history-incremental-search-backward
-
-bindkey -M viins '^F' history-incremental-search-forward
-bindkey -M vicmd '^F' history-incremental-search-forward
-
-# search history for the current line up to the cursor
-bindkey -M viins '^P' history-beginning-search-backward
-bindkey -M vicmd '^P' history-beginning-search-backward
-
-bindkey -M viins '^N' history-beginning-search-forward
-bindkey -M vicmd '^N' history-beginning-search-forward
-
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word
 
@@ -128,11 +114,12 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# history-substring-search bind k and j for vi-mode
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
+# incremental history search using zaw
+bindkey '^R' zaw-history
+bindkey -M filterselect '^R' down-line-or-history
+bindkey -M filterselect '^S' up-line-or-history
+bindkey -M filterselect '^E' accept-search
 
-# colors
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='bg=white,fg=black,bold'
-HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='bg=red,fg=black'
-HISTORY_SUBSTRING_SEARCH_GLOBBING_FLAGS='i'
+zstyle ':filter-select' max-lines 10
+zstyle ':filter-select' case-insensitive yes
+zstyle ':filter-select' extended-search yes

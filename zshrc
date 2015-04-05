@@ -54,7 +54,28 @@ function serve {
   ruby -run -e httpd . -p $port
 }
 
-# IRC 
+# improve the behavior of the cd command in git repos
+_git_cd () {
+  if [[ "$1" != "" ]]; then
+    cd "$@"
+  else
+    local OUTPUT
+    OUTPUT="$(git rev-parse --show-toplevel 2>/dev/null)"
+    if [[ -e "$OUTPUT" ]]; then
+      if [[ "$OUTPUT" != "$(pwd)" ]]; then
+        cd "$OUTPUT"
+      else
+        cd
+      fi
+    else
+      cd 
+    fi
+  fi
+}
+
+alias cd=_git_cd
+
+# IRC
 # IRCNICK=slocate
 IRCNICK=fdelacruz
 IRC_SERVERS_FILE=~/ircII.servers

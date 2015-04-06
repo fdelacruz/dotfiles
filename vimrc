@@ -23,9 +23,6 @@ Plugin 'jasoncodes/ctrlp-modified.vim'
 
 Plugin 'sjl/gundo.vim'
 
-Plugin 'davidhalter/jedi-vim'
-Plugin 'nvie/vim-flake8'
-
 Plugin 'scrooloose/syntastic'
 
 Plugin 'SirVer/ultisnips'
@@ -162,8 +159,6 @@ augroup vimrcEx
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
   autocmd BufRead *.markdown  set ai formatoptions=tcroqn2 comments=n:&gt;
 
-  autocmd BufWritePost *.py call Flake8()
-
   " Indent p tags
   " autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
 
@@ -230,11 +225,6 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>m :CtrlPModified<CR>
 map <Leader>M :CtrlPBranch<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Jedi-vim
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:jedi#usages_command = "<leader>z"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Python folding

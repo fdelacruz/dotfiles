@@ -136,6 +136,9 @@ set splitbelow
 set splitright
 " Eliminate delay on ESC
 set ttimeoutlen=0
+" Turn folding off
+set foldmethod=manual
+set nofoldenable
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CUSTOM AUTOCMDS
@@ -169,9 +172,6 @@ augroup vimrcEx
   " to run commands there.
   autocmd! CmdwinEnter * :unmap <cr>
   autocmd! CmdwinLeave * :call MapCR()
-
-  " Automatic fold settings for specific files
-  autocmd FileType ruby setlocal foldmethod=syntax
 
   " Resize splits when the window is resized
   autocmd VimResized * :wincmd =
@@ -225,11 +225,6 @@ endif
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader>m :CtrlPModified<CR>
 map <Leader>M :CtrlPBranch<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python folding
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set nofoldenable
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-textobj-rubyblock

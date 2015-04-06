@@ -23,8 +23,6 @@ Plugin 'jasoncodes/ctrlp-modified.vim'
 
 Plugin 'sjl/gundo.vim'
 
-Plugin 'scrooloose/syntastic'
-
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'
@@ -230,27 +228,6 @@ map <Leader>M :CtrlPBranch<CR>
 " Python folding
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nofoldenable
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Syntastic
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_auto_loc_list=1
-let g:syntastic_loc_list_height=5
-let g:syntastic_html_tidy_ignore_errors=[
-            \ '<a> escaping malformed URI reference',
-            \ '<img> escaping malformed URI reference',
-            \ 'trimming empty <span>',
-            \ "plain text isn\'t allowed in <head> elements",
-            \ '<if> is not recognized!',
-            \ 'discarding unexpected <if>',
-            \ 'discarding unexpected </if>',
-            \ '<else> is not recognized!',
-            \ 'discarding unexpected <else>',
-            \ "'<' + '/' + letter not allowed here"
-            \ ]
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-textobj-rubyblock

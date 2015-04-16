@@ -154,9 +154,10 @@ augroup vimrcEx
         \ endif
 
   " For ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,haml,eruby,yaml,html,sass,cucumber set ai sw=2 sts=2 et
-  autocmd FileType python set sw=4 sts=4 et
-  autocmd FileType javascript set ts=4 sw=4 sts=0 noet
+  autocmd FileType html setlocal ts=2 sw=2 et
+  autocmd FileType ruby setlocal ts=2 sw=2 et
+  autocmd FileType python setlocal ts=4 sw=4 et
+  autocmd FileType javascript setlocal ts=4 sw=4 sts=0 noet
 
   autocmd! BufRead,BufNewFile *.sass setfiletype sass
 

@@ -84,8 +84,9 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
-set list          " display extra whitespace
-set listchars=tab:»·,trail:·,extends:⟩,precedes:⟨
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\·,trail:·,eol:¬
+
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line
 
@@ -416,3 +417,6 @@ function! AlternateForCurrentFile()
   return new_file
 endfunction
 nnoremap <leader>. :call OpenTestAlternate()<cr>
+
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>

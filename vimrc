@@ -286,6 +286,10 @@ autocmd FileType ruby xmap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
 autocmd FileType ruby imap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" jshint
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let JSHintUpdateWriteOnly=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MISC KEY MAPS

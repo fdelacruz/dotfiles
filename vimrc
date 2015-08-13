@@ -48,7 +48,6 @@ Plugin 'nelstrom/vim-textobj-rubyblock'
 Plugin 'rking/ag.vim'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 't9md/vim-ruby-xmpfilter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tommcdo/vim-exchange'
 
@@ -261,32 +260,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Seeing Is Believing
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:xmpfilter_cmd = "seeing_is_believing"
-
-" Insert evaluated result with mark.
-autocmd FileType ruby nmap <buffer> <F6> <Plug>(seeing_is_believing-run)
-autocmd FileType ruby xmap <buffer> <F6> <Plug>(seeing_is_believing-run)
-autocmd FileType ruby imap <buffer> <F6> <Plug>(seeing_is_believing-run)
-
-" Insert ' # =>' into end of line or delete ' # =>' if it already exist.
-autocmd FileType ruby nmap <buffer> <F7> <Plug>(seeing_is_believing-mark)
-autocmd FileType ruby xmap <buffer> <F7> <Plug>(seeing_is_believing-mark)
-autocmd FileType ruby imap <buffer> <F7> <Plug>(seeing_is_believing-mark)
-
-" Clean all marks in the buffer.
-autocmd FileType ruby nmap <buffer> <F8> <Plug>(seeing_is_believing-clean)
-autocmd FileType ruby xmap <buffer> <F8> <Plug>(seeing_is_believing-clean)
-autocmd FileType ruby imap <buffer> <F8> <Plug>(seeing_is_believing-clean)
-
-" xmpfilter compatible
-autocmd FileType ruby nmap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
-autocmd FileType ruby xmap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
-autocmd FileType ruby imap <buffer> <F9> <Plug>(seeing_is_believing-run_-x)
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " jshint

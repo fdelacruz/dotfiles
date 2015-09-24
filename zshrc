@@ -39,6 +39,10 @@ plugins=(git vi-mode zaw)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+
 alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.rename(f, f.gsub(a, b)) }"'
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
@@ -50,8 +54,8 @@ alias stop_pg="pg_ctl -D /usr/local/var/postgres stop -m fast"
 
 # serve current directory from command line
 function serve {
-  port="${1:-4000}"
-  ruby -run -e httpd . -p $port
+port="${1:-4000}"
+ruby -run -e httpd . -p $port
 }
 
 # improve the behavior of the cd command in git repos

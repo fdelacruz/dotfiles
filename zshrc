@@ -48,10 +48,6 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 
-# PostgreSQL
-alias start_pg="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias stop_pg="pg_ctl -D /usr/local/var/postgres stop -m fast"
-
 # serve current directory from command line
 function serve {
 port="${1:-4000}"

@@ -147,3 +147,6 @@ bindkey -M filterselect '^E' accept-search
 zstyle ':filter-select' max-lines 10
 zstyle ':filter-select' case-insensitive yes
 zstyle ':filter-select' extended-search yes
+
+# load z
+. `brew --prefix`/etc/profile.d/z.sh

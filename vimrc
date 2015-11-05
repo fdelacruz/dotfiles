@@ -26,6 +26,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'wookiehangover/jshint.vim'
 
 Plugin 'digitaltoad/vim-jade'
+Plugin 'pangloss/vim-javascript'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'

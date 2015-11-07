@@ -50,6 +50,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'pbrisbin/vim-mkdir'
+Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()

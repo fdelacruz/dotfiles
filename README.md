@@ -62,7 +62,7 @@ git clone git@github.com:fdelacruz/tmux-powerline.git
 
 ## Screenshot
 
-![Screenshot](http://i.imgur.com/444dn64.png)
+![Screenshot](http://i.imgur.com/EVnXqoQ.png)
 
 ## LICENSE
 

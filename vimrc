@@ -84,7 +84,10 @@ set colorcolumn=+1
 set tabstop=2
 set shiftwidth=2
 set shiftround
+" Make "tab" insert indents instead of tabs at the beginning of a line
 set expandtab
+" Always uses spaces instead of tab characters
+set smarttab
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\·,trail:·,eol:¬

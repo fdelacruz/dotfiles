@@ -150,3 +150,6 @@ zstyle ':filter-select' extended-search yes
 
 # load z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Tmux statusline
+export PATH="/Users/fdelacruz/Library/Python/2.7/bin:$PATH"

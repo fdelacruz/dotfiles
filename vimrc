@@ -42,7 +42,6 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-dispatch'
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Raimondi/delimitMate'
 Plugin 'rking/ag.vim'
 Plugin 'jgdavey/tslime.vim'
@@ -202,6 +201,10 @@ call togglebg#map("<F4>")
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " POWERLINE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256

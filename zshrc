@@ -152,4 +152,4 @@ zstyle ':filter-select' extended-search yes
 . `brew --prefix`/etc/profile.d/z.sh
 
 # Tmux statusline
-export PATH="/Users/fdelacruz/Library/Python/2.7/bin:$PATH"
+export PATH=$HOME/.vim/bundle/powerline/scripts:$PATH

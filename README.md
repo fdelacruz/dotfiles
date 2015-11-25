@@ -52,17 +52,10 @@ brew install tmux
 brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 ```
 
-* install tmux-powerline
-
-```
-git clone git@github.com:fdelacruz/tmux-powerline.git
-```
-
 **Note:** You need a patched font to be able to use the symbols in the statusline using powerline. You can get them [here](https://github.com/Lokaltog/powerline-fonts). Use OSX's Font Book to install it.
 
 ## Screenshot
-
-![Screenshot](http://i.imgur.com/EVnXqoQ.png)
+![Screenshot](http://i.imgur.com/bACt01V.jpg)
 
 ## LICENSE
 

@@ -10,6 +10,9 @@
         "priority": 50
       },
       {
+        "function": "powerline.segments.common.bat.battery"
+      },
+      {
         "function": "powerline.segments.common.time.fuzzy_time"
       },
       {

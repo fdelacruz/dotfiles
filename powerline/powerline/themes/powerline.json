@@ -1,0 +1,39 @@
+{
+	"segment_data": {
+		"powerline.segments.common.bat.battery": {
+			"args": {
+				"full_heart": "♥",
+				"empty_heart": "♥",
+				"online": "⚡︎",
+				"offline": " "
+			}
+		},
+		"powerline.segments.common.sys.uptime": {
+			"before": "⇑ "
+		},
+		"powerline.segments.common.wthr.weather": {
+			"args": {
+				"icons": {
+					"day":           "〇",
+					"blustery":      "⚑",
+					"rainy":         "☔",
+					"cloudy":        "☁",
+					"snowy":         "❅",
+					"stormy":        "☈",
+					"foggy":         "≡",
+					"sunny":         "☼",
+					"night":         "☾",
+					"windy":         "☴",
+					"not_available": "�",
+					"unknown":       "⚠"
+				}
+			}
+		},
+		"powerline.segments.common.time.fuzzy_time": {
+			"args": {
+				"unicode_text": true
+			}
+		}
+	}
+}
+

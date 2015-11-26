@@ -14,10 +14,10 @@ git clone git@github.com:fdelacruz/dotfiles.git .dotfiles
 * create symbolic links to config files
 
 ```
-ln -s .dotfiles/zshrc .zshrc
-ln -s .dotfiles/vimrc .vimrc
-ln -s .dotfiles/tmux.conf .tmux.conf
-ln -s .dotfiles/tmux-powerlinerc .tmux-powerlinerc
+ln -s ~/.dotfiles/zshrc ~/.zshrc
+ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/powerline ~/.config
 ```
 
 * install oh-my-zsh

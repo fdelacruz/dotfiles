@@ -10,13 +10,6 @@
         "priority": 50
       },
       {
-        "function": "powerline.segments.common.wthr.weather",
-        "args": {
-          "unit": "F",
-          "location_query": "manhattan"
-        }
-      },
-      {
         "function": "powerline.segments.common.time.fuzzy_time"
       },
       {

@@ -9,6 +9,7 @@
       "before": "⇑ "
     },
     "powerline.segments.common.time.fuzzy_time": {
+      "before": "⌚ ",
       "args": {
         "unicode_text": true
       }

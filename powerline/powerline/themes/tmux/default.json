@@ -14,6 +14,9 @@
       },
       {
         "function": "powerline.segments.common.net.hostname"
+      },
+      {
+        "function": "powerline.segments.tmux.attached_clients"
       }
     ]
   }

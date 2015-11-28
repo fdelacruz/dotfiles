@@ -13,6 +13,11 @@
       "args": {
         "unicode_text": true
       }
+    },
+    "powerline.segments.tmux.attached_clients": {
+      "args": {
+        "minimum": 2
+      }
     }
   }
 }

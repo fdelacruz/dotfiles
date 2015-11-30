@@ -1,7 +1,6 @@
 {
 	"name": "Solarized dark",
 	"groups": {
-		"background:divider":      { "fg": "solarized:base1", "bg": "solarized:base03", "attrs": [] },
-		"fuzzy_time":              { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": ["bold"] }
+		"background:divider":      { "fg": "solarized:base1", "bg": "solarized:base03", "attrs": [] }
 	}
 }

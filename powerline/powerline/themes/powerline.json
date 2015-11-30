@@ -8,12 +8,6 @@
     "powerline.segments.common.sys.uptime": {
       "before": "⇑ "
     },
-    "powerline.segments.common.time.fuzzy_time": {
-      "before": "⌚ ",
-      "args": {
-        "unicode_text": true
-      }
-    },
     "powerline.segments.tmux.attached_clients": {
       "args": {
         "minimum": 2

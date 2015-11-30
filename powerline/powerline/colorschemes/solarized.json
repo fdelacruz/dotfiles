@@ -1,6 +1,6 @@
 {
 	"name": "Solarized dark",
 	"groups": {
-		"background:divider":      { "fg": "solarized:base1", "bg": "solarized:base03", "attrs": [] }
+		"battery": { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": [] }
 	}
 }

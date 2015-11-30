@@ -5,8 +5,7 @@
         "exclude_domain": true
       }
     },
-    "powerline.segments.common.sys.uptime": {
-      "before": "⇑ "
+    "powerline.segments.common.bat.battery": {
     },
     "powerline.segments.tmux.attached_clients": {
       "args": {

@@ -2,6 +2,12 @@
   "segments": {
     "right": [
       {
+        "function": "powerline.segments.common.sys.uptime"
+      },
+      {
+        "function": "powerline.segments.common.sys.system_load"
+      },
+      {
         "function": "powerline.segments.common.bat.battery"
       },
       {

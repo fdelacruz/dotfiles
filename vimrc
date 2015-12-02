@@ -51,6 +51,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'gregsexton/gitv'
 
 " All of your Plugins must be added before the following line
 call vundle#end()

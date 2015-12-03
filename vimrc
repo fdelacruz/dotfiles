@@ -52,6 +52,7 @@ Plugin 'tommcdo/vim-exchange'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'gregsexton/gitv'
+Plugin 'justinmk/vim-sneak'
 
 " All of your Plugins must be added before the following line
 call vundle#end()

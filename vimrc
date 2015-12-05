@@ -62,7 +62,9 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " BASIC EDITING CONFIGURATION
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set clipboard+=unnamed
+
+" All yank/delete/paste operations use the sys register *
+set clipboard=unnamed
 
 " Allow unsaved background buffers and remember marks/undo for them
 set hidden

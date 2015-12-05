@@ -39,6 +39,9 @@ plugins=(git vi-mode zaw)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+alias vi=vim
+
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help

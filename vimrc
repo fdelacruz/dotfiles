@@ -191,18 +191,6 @@ cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
 map <leader>v :view %%
 
-" Rename current file
-function! RenameFile()
-  let old_name = expand('%')
-  let new_name = input('New file name: ', expand('%'), 'file')
-  if new_name != '' && new_name != old_name
-    exec ':saveas ' . new_name
-    exec ':silent !rm ' . old_name
-    redraw!
-  endif
-endfunction
-map <leader>n :call RenameFile()<cr>
-
 " InsertTime COMMAND
 " Insert the current time
 command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>

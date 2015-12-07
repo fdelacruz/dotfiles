@@ -8,7 +8,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jasoncodes/ctrlp-modified.vim'
 
 Plugin 'sjl/gundo.vim'

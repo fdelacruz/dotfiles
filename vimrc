@@ -295,16 +295,13 @@ omap F <Plug>Sneak_S
 hi SneakPluginTarget ctermfg=black ctermbg=red
 
 " easyclip
-let g:EasyClipUsePasteToggleDefaults = 0
-nmap <c-f> <plug>EasyClipSwapPasteForward
-nmap <c-d> <plug>EasyClipSwapPasteBackwards
-
 let g:EasyClipUseSubstituteDefaults = 1
-nmap <silent> gs <plug>SubstituteOverMotionMap
-nmap gss <plug>SubstituteLine
-xmap gs p
 
 let g:EasyClipUseCutDefaults = 0
 nmap x <Plug>MoveMotionPlug
 xmap x <Plug>MoveMotionXPlug
 nmap xx <Plug>MoveMotionLinePlug
+
+let g:EasyClipUsePasteToggleDefaults = 0
+nmap <c-f> <plug>EasyClipSwapPasteForward
+nmap <c-d> <plug>EasyClipSwapPasteBackwards

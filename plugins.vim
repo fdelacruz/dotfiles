@@ -13,8 +13,6 @@ Plugin 'jasoncodes/ctrlp-modified.vim'
 
 Plugin 'sjl/gundo.vim'
 
-Plugin 'wookiehangover/jshint.vim'
-
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
 

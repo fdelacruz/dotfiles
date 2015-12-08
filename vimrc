@@ -302,3 +302,14 @@ nmap xx <Plug>MoveMotionLinePlug
 let g:EasyClipUsePasteToggleDefaults = 0
 nmap <c-f> <plug>EasyClipSwapPasteForward
 nmap <c-d> <plug>EasyClipSwapPasteBackwards
+
+" syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+" allow JSX in normal JS files
+let g:jsx_ext_required = 0                

@@ -17,6 +17,7 @@ Plugin 'scrooloose/syntastic'
 
 Plugin 'digitaltoad/vim-jade'
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'

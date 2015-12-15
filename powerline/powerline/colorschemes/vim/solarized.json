@@ -1,0 +1,13 @@
+{
+	"name": "Solarized dark for vim",
+	"groups": {
+		"modified_indicator":         { "fg": "solarized:green", "bg": "solarized:base01", "attrs": ["bold"] }
+	},
+	"mode_translations": {
+		"i": {
+			"groups": {
+				"modified_indicator":     { "fg": "solarized:green", "bg": "solarized:base2", "attrs": ["bold"] }
+			}
+		}
+	}
+}

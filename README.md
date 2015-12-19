@@ -61,7 +61,7 @@ pip install psutils
 **Note:** You need a patched font to be able to use the symbols in the statusline using powerline. You can get them [here](https://github.com/Lokaltog/powerline-fonts). Use OSX's Font Book to install it.
 
 ## Screenshot
-![Screenshot](http://i.imgur.com/0NftxA3.jpg)
+![Screenshot](http://i.imgur.com/4pMwh53.jpg)
 
 ## LICENSE
 

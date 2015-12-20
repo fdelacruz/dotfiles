@@ -39,7 +39,7 @@ set expandtab
 set smarttab
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:▸\·,trail:·,eol:¬
+set listchars=tab:▸\ ,trail:·,eol:¬
 
 set shiftround    " round indent to multiple of 'shiftwidth'
 set autoindent    " align the new line indent with the previous line

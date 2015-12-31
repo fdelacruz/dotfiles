@@ -38,6 +38,8 @@ set expandtab
 " Always uses spaces instead of tab characters
 set smarttab
 
+" List mode
+set list
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,trail:·,eol:¬
 

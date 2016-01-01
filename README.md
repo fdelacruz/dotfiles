@@ -65,4 +65,6 @@ pip install psutils
 
 ## LICENSE
 
-dotfiles is © 2013-2015 Francisco De La Cruz. It is free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.
+Copyright © 2013-2016 Francisco De La Cruz. 
+
+This is free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.

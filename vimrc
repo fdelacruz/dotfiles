@@ -117,6 +117,9 @@ augroup vimrcEx
   autocmd BufNewFile,BufRead *.handlebars setfiletype html
   autocmd BufNewFile,BufRead *.ejs setfiletype html
 
+  " Have these snippet loaded everytime a JavaScript file is opened or created
+  autocmd FileType javascript UltiSnipsAddFiletypes javascript-mocha
+
   " Indent p tags
   " autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
 

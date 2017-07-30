@@ -12,6 +12,7 @@ set clipboard=unnamed
 
 " Allow unsaved background buffers and remember marks/undo for them
 set hidden
+
 " Remember more commands and search history
 set history=10000
 
@@ -33,13 +34,16 @@ set colorcolumn=+1
 set tabstop=2
 set shiftwidth=2
 set shiftround
+
 " Make "tab" insert indents instead of tabs at the beginning of a line
 set expandtab
+
 " Always uses spaces instead of tab characters
 set smarttab
 
 " List mode
 set list
+
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:▸\ ,trail:·,eol:¬
 
@@ -49,14 +53,17 @@ set autoindent    " align the new line indent with the previous line
 set showmatch
 set incsearch
 set hlsearch
+
 " Make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
+
 " Highlight current line
 set cursorline
 set cmdheight=1
 set switchbuf=useopen
 set number
 set numberwidth=3
+
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
@@ -68,27 +75,37 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 end
+
 " Keep more context when scrolling off the end of a buffer
 set scrolloff=3
+
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
 " Show dollar sign at end of text to be changed.
 set cpoptions+=$
+
 " Display incomplete commands
 set showcmd
+
 " Enable highlighting for syntax
 syntax on
+
 " Complete first full match, next match, etc.  (the default)
 set wildmode=full
+
 " Command-line completion operates in an enhanced mode
 set wildmenu
 set dictionary+=/usr/share/dict/words "from Hacking Vim
 set mouse=nv "use mouse in normal and visual mode only
+
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
+
 " Eliminate delay on ESC
 set ttimeoutlen=0
+
 " Turn folding off
 set foldmethod=manual
 set nofoldenable
@@ -184,6 +201,7 @@ nnoremap k gk
 " Bubble single lines
 nmap <C-Up> [e
 nmap <C-Down> ]e
+
 " Bubble multiple lines
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
@@ -211,6 +229,7 @@ let g:solarized_contrast='normal'
 let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'
 colorscheme solarized
+
 " Toggle background function
 call togglebg#map("<F4>")
 
@@ -317,4 +336,4 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
 
 " allow JSX in normal JS files
-let g:jsx_ext_required = 0                
+let g:jsx_ext_required = 0

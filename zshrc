@@ -40,7 +40,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-alias vi=vim
+alias vi=/usr/local/bin/vim
 
 unalias run-help
 autoload run-help

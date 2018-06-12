@@ -43,6 +43,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'gregsexton/gitv'
 Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
+Plugin 'plytophogy/vim-virtualenv'
 
 call vundle#end()
 filetype plugin indent on

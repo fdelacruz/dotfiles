@@ -3,6 +3,7 @@
 	"groups": {
 		"background:divider":     { "fg": "solarized:base1", "bg": "solarized:base03", "attrs": [] },
 		"battery":                { "fg": "GREEN_Orange_red", "bg": "solarized:base02", "attrs": [] },
-		"syntastic:warning":      { "fg": "solarized:base3", "bg": "solarized:violet", "attrs": [] }
+		"syntastic:warning":      { "fg": "solarized:base3", "bg": "solarized:violet", "attrs": [] },
+		"virtualenv":             { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": [] }
 	}
 }

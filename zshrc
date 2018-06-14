@@ -52,7 +52,7 @@ alias lockDock='defaults write com.apple.dock contents-immutable -bool true && k
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 
 # nodemon
-alias nodemon='nodemon -L'
+#alias nodemon='nodemon -L'
 
 # serve current directory from command line
 function serve {
@@ -87,21 +87,7 @@ IRCNICK=fdelacruz
 IRC_SERVERS_FILE=~/ircII.servers
 export IRCNICK IRC_SERVERS_FILE
 
-# ri decorated section headings
-export RI="--format ansi --width 70"
-
-# rspec in color with [d]ocumentation (group and example names) formatting
-rspec_color() { rspec "$*" --color -f d; }
-
-# export PATH=/Users/fdelacruz/bin:/usr/local/bin:/usr/local/git/bin:$PATH
-
-# temporary fix to the zsh and tmux path problem, via http://bit.ly/1f8BYcs
-export PATH=/Users/fdelacruz/.rbenv/shims:/Users/fdelacruz/.rbenv/bin:/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
-# export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# Rails development environment
-export RAILS_ENV=development
+export PATH=/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:$PATH
 
 # vi-mode
 # kill the  delay
@@ -110,15 +96,6 @@ export KEYTIMEOUT=1
 # set default editor
 export EDITOR=vim
 export VISUAL=vim
-
-# node/npm
-export NPM_PACKAGES=$HOME/.npm-packages
-export NODE_PATH=$NPM_PACKAGES/lib/node_modules:$NODE_PATH
-export PATH=$NPM_PACKAGES/bin:$PATH
-
-# MongoDB
-export MONGO_PATH=/usr/local/mongodb
-export PATH=$PATH:$MONGO_PATH/bin
 
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word

@@ -273,6 +273,7 @@ let g:netrw_localrmdir='rm -r'
 map <Leader>A :Ag<SPACE>
 
 " Gundo
+let g:gundo_prefer_python3 = 1
 nnoremap <F5> :GundoToggle<CR>
 
 " UltiSnips

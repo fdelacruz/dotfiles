@@ -26,6 +26,12 @@ ln -s ~/.dotfiles/powerline ~/.config
 git clone git@github.com:fdelacruz/oh-my-zsh.git .oh-my-zsh
 ```
 
+* install zaw
+
+```
+git clone git@github.com:zsh-users/zaw.git ~/.oh-my-zsh/custom/plugins/zaw
+```
+
 * install Vundle
 
 ```
@@ -58,13 +64,24 @@ brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
 pip install psutils
 ```
 
-**Note:** You need a patched font to be able to use the symbols in the statusline using powerline. You can get them [here](https://github.com/Lokaltog/powerline-fonts). Use OSX's Font Book to install it.
+* install powerline patched fonts
+
+```
+    # clone
+    git clone https://github.com/powerline/fonts.git --depth=1
+    # install
+    cd fonts
+    ./install.sh
+    # clean-up a bit
+    cd ..
+    rm -rf fonts
+```
 
 ## Screenshot
 ![Screenshot](http://i.imgur.com/4pMwh53.jpg)
 
 ## LICENSE
 
-Copyright © 2013-2016 Francisco De La Cruz. 
+Copyright © 2013-2018 Francisco De La Cruz. 
 
 This is free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.

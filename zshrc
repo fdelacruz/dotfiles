@@ -34,7 +34,8 @@ export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color [nya
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git vi-mode zaw)
+plugins=(git vi-mode zaw zsh-completions)
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 

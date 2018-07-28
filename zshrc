@@ -42,6 +42,7 @@ bindkey '\eOA' history-substring-search-up
 bindkey '\eOB' history-substring-search-down
 
 bindkey '^ ' autosuggest-accept
+bindkey '^_' autosuggest-clear
 
 source $ZSH/oh-my-zsh.sh
 

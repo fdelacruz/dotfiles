@@ -224,7 +224,7 @@ nmap <leader>l :set list!<CR>
 "                              Plugins Configuration
 " vim-colors-solarized
 syntax enable
-set background=dark
+set background=light
 let g:solarized_contrast='normal'
 let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'

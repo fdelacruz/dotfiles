@@ -306,16 +306,6 @@ nnoremap <space>gpl :Dispatch! git pull<CR>
 nnoremap <space>gvv :Gitv<CR>
 nnoremap <space>gvV :Gitv!<CR>
 
-" sneak
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
-
-hi SneakPluginTarget ctermfg=black ctermbg=red
-
 " easyclip
 let g:EasyClipUseSubstituteDefaults = 1
 

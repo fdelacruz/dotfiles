@@ -29,6 +29,7 @@ Plugin 'tpope/vim-endwise'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-obsession'
 
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}

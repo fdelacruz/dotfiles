@@ -38,8 +38,8 @@ plugins=(git vi-mode zaw zsh-completions history-substring-search zsh-autosugges
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 bindkey -v
-bindkey '\eOA' history-substring-search-up
-bindkey '\eOB' history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 bindkey '^ ' autosuggest-accept
 bindkey '^_' autosuggest-clear

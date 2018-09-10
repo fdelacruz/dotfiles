@@ -333,3 +333,6 @@ noremap <C-w>f :SyntasticToggleMode<CR>
 
 " allow JSX in normal JS files
 let g:jsx_ext_required = 0
+
+" completor.vim
+let g:completor_python_binary = '/usr/local/bin/python3'

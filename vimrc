@@ -107,7 +107,7 @@ set splitright
 set ttimeoutlen=0
 
 " Turn folding off
-set foldmethod=manual
+set foldmethod=indent
 set nofoldenable
 
 " Custom autocmds

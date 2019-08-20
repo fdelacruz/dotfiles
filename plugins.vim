@@ -34,7 +34,10 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-obsession'
 
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
 Plugin 'Raimondi/delimitMate'
 Plugin 'rking/ag.vim'
 Plugin 'jgdavey/tslime.vim'

@@ -230,11 +230,12 @@ let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'
 colorscheme solarized
 
-" Toggle background function
-call togglebg#map("<F4>")
+" vim-airline
+let g:airline_theme='solarized'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_skip_empty_sections = 1
 
-" Powerline
-let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
 set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
@@ -242,6 +243,9 @@ set termencoding=utf-8
 
 set laststatus=2
 set noshowmode
+
+" Toggle background function
+call togglebg#map("<F4>")
 
 " CtrlP
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher

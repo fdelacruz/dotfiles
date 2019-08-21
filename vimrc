@@ -231,7 +231,7 @@ let g:solarized_visibility='low'
 colorscheme solarized
 
 " vim-airline
-let g:airline_theme='solarized'
+let g:airline_theme='solarized_light'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_skip_empty_sections = 1

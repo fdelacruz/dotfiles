@@ -15,8 +15,6 @@ Plugin 'sjl/gundo.vim'
 
 Plugin 'scrooloose/syntastic'
 
-Plugin 'digitaltoad/vim-jade'
-
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'ervandew/supertab'

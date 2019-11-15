@@ -336,8 +336,5 @@ let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive
 noremap <C-w>e :SyntasticCheck<CR>
 noremap <C-w>f :SyntasticToggleMode<CR>
 
-" allow JSX in normal JS files
-let g:jsx_ext_required = 0
-
 " completor.vim
 let g:completor_python_binary = '/usr/local/bin/python3'

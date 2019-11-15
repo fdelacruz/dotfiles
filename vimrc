@@ -248,6 +248,11 @@ set noshowmode
 " Toggle background function
 call togglebg#map("<F4>")
 
+" Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 " CtrlP
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

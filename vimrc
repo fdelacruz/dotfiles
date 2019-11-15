@@ -253,6 +253,10 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
+" search for the word that you’re staring at
+nmap <M-k>  :Ack! "\b<cword>\b" <CR>
+nmap <Esc>k :Ack! "\b<cword>\b" <CR>
+
 " CtrlP
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')

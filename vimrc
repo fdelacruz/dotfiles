@@ -249,8 +249,8 @@ set noshowmode
 call togglebg#map("<F4>")
 
 " Ack
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep --no-heading'
 endif
 
 " search for the word that you’re staring at

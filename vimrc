@@ -230,6 +230,9 @@ let g:solarized_diffmode='high'                    " Excellent for :Gdiff
 let g:solarized_visibility='low'
 colorscheme solarized
 
+" Change the default value of cterm as of vim patch 8.1.2029
+highlight CursorLineNr cterm=bold ctermfg=012
+
 " vim-airline
 let g:airline_theme='solarized_light'
 let g:airline_powerline_fonts = 1

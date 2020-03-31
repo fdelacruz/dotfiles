@@ -156,7 +156,8 @@ export PATH=$HOME/.vim/bundle/powerline/scripts:$PATH
 # virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+# export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/opt/python@3.8/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Python 3.8

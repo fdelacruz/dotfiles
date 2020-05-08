@@ -356,3 +356,6 @@ let g:completor_python_binary = '/usr/local/bin/python3'
 
 " vim-gitgutter
 highlight! link SignColumn LineNr
+
+" vim-go
+let g:go_imports_autosave = 1

@@ -352,7 +352,8 @@ noremap <C-w>e :SyntasticCheck<CR>
 noremap <C-w>f :SyntasticToggleMode<CR>
 
 " completor.vim
-let g:completor_python_binary = '/usr/local/bin/python3'
+" let g:completor_python_binary = '/usr/local/bin/python3'
+let g:completor_python_binary = '/usr/local/opt/python@3.8/bin/python3'
 
 " vim-gitgutter
 highlight! link SignColumn LineNr

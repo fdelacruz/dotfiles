@@ -150,9 +150,6 @@ zstyle ':filter-select' extended-search yes
 # load z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# Tmux statusline
-export PATH=$HOME/.vim/bundle/powerline/scripts:$PATH
-
 # virtualenvwrapper.sh
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel

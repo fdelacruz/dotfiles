@@ -36,6 +36,7 @@ Plugin 'altercation/vim-colors-solarized'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'edkolev/tmuxline.vim'
 
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'

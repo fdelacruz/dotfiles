@@ -50,6 +50,7 @@ Plugin 'gregsexton/gitv'
 Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'plytophogy/vim-virtualenv'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 
 Plugin 'fatih/vim-go'
 Plugin 'mdempsky/gocode', {'rtp': 'vim/'}

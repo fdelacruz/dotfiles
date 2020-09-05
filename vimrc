@@ -141,6 +141,9 @@ augroup vimrcEx
   " Have these snippet loaded everytime a JavaScript file is opened or created
   autocmd FileType javascript UltiSnipsAddFiletypes javascript-mocha
 
+  " Don't continue comments for new lines
+  autocmd FileType javascript set formatoptions-=cro
+
   " Indent p tags
   " autocmd FileType html,eruby if g:html_indent_tags !~ '\\|p\>' | let g:html_indent_tags .= '\|p\|li\|dt\|dd' | endif
 

@@ -99,8 +99,7 @@ set wildmenu
 set dictionary+=/usr/share/dict/words "from Hacking Vim
 set mouse=nv "use mouse in normal and visual mode only
 
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
+" Open new split panes to right and above (default) which feels more natural
 set splitright
 
 " Eliminate delay on ESC

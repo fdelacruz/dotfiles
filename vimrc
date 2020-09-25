@@ -109,6 +109,9 @@ set ttimeoutlen=0
 set foldmethod=indent
 set nofoldenable
 
+" If a file is changed outside of vim, auto reload it without asking
+set autoread
+
 " Custom autocmds
 augroup vimrcEx
   " Clear all autocmds in the group

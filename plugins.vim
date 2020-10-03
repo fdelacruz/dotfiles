@@ -43,7 +43,6 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'mileszs/ack.vim'
 Plugin 'jgdavey/tslime.vim'
-Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'tommcdo/vim-exchange'
 Plugin 'pbrisbin/vim-mkdir'
 Plugin 'airblade/vim-gitgutter'
@@ -52,6 +51,7 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
 filetype plugin indent on

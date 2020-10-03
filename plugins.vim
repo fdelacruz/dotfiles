@@ -53,8 +53,5 @@ Plugin 'svermeulen/vim-easyclip'
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 
-Plugin 'fatih/vim-go'
-Plugin 'mdempsky/gocode', {'rtp': 'vim/'}
-
 call vundle#end()
 filetype plugin indent on

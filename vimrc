@@ -128,11 +128,6 @@ augroup vimrcEx
   autocmd FileType python setlocal ts=4 sw=4 sts=4 et
   autocmd FileType javascript setlocal ts=2 sw=2 sts=2 et
 
-  autocmd FileType go nmap <leader>r <Plug>(go-run)
-  autocmd FileType go nmap <leader>b <Plug>(go-build)
-  autocmd FileType go nmap <leader>t <Plug>(go-test)
-  autocmd FileType go nmap <leader>c <Plug>(go-coverage)
-
   autocmd! BufRead,BufNewFile *.sass setfiletype sass
 
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
@@ -352,7 +347,6 @@ let g:syntastic_check_on_wq = 1
 
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_go_checkers = ['golint']
 
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': [] }
 noremap <C-w>e :SyntasticCheck<CR>
@@ -365,6 +359,3 @@ let g:completor_node_binary = '/usr/local/bin/node'
 
 " vim-gitgutter
 highlight! link SignColumn LineNr
-
-" vim-go
-let g:go_imports_autosave = 1

@@ -49,7 +49,6 @@ Plugin 'gregsexton/gitv'
 Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'plytophogy/vim-virtualenv'
-Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()

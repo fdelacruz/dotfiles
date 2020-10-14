@@ -50,6 +50,7 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'svermeulen/vim-easyclip'
 Plugin 'plytophogy/vim-virtualenv'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call vundle#end()
 filetype plugin indent on

@@ -105,6 +105,9 @@ set splitright
 " Eliminate delay on ESC
 set ttimeoutlen=0
 
+" Delay in updating..
+set updatetime=100
+
 " Turn folding off
 set foldmethod=indent
 set nofoldenable

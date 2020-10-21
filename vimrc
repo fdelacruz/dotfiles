@@ -362,3 +362,4 @@ let g:completor_node_binary = '/usr/local/bin/node'
 
 " vim-gitgutter
 highlight! link SignColumn LineNr
+let g:gitgutter_grep = 'rg'

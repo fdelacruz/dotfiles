@@ -15,7 +15,6 @@ Plugin 'jasoncodes/ctrlp-modified.vim'
 
 Plugin 'sjl/gundo.vim'
 
-Plugin 'scrooloose/syntastic'
 Plugin 'dense-analysis/ale'
 
 Plugin 'SirVer/ultisnips'

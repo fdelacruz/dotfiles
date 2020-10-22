@@ -342,6 +342,29 @@ let g:EasyClipUsePasteToggleDefaults = 0
 nmap <c-f> <plug>EasyClipSwapPasteForward
 nmap <c-d> <plug>EasyClipSwapPasteBackwards
 
+" ale
+let g:ale_fixers = {
+\  'css':        ['prettier'],
+\  'javascript': ['prettier-standard'],
+\  'python':     ['autopep8'],
+\  'json':       ['prettier'],
+\}
+let g:ale_linters = {
+\  'css':        ['csslint'],
+\  'javascript': ['standard'],
+\  'python':     ['flake8'],
+\  'json':       ['jsonlint'],
+\}
+let g:ale_linters_explicit         = 1
+let g:ale_open_list                = 0
+
+let g:ale_fix_on_save              = 1
+let g:ale_lint_on_enter            = 0
+let g:ale_lint_on_filetype_changed = 0
+let g:ale_lint_on_insert_leave     = 0
+let g:ale_lint_on_save             = 1
+let g:ale_lint_on_text_changed     = 'never'
+
 " completor.vim
 " let g:completor_python_binary = '/usr/local/bin/python3'
 let g:completor_python_binary = '/usr/local/opt/python@3.8/bin/python3'

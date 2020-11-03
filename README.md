@@ -63,8 +63,12 @@ brew install tmux
     rm -rf fonts
 ```
 
-## Screenshot
-![Screenshot](http://i.imgur.com/4pMwh53.jpg)
+## Screenshots
+Solarized Light
+![Screenshot](https://i.imgur.com/nEvLVoV.png)
+
+Solarized Dark
+![Screenshot](https://i.imgur.com/Lkec40R.png)
 
 ## LICENSE
 

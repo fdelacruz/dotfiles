@@ -1,6 +1,6 @@
 # dotfiles
 
-This repo is a collection of my zsh, vim, tmux and other customizations 
+This repo is a collection of my zsh, vim, and tmux customizations
 
 ## Installation
 
@@ -17,7 +17,6 @@ git clone git@github.com:fdelacruz/dotfiles.git .dotfiles
 ln -s ~/.dotfiles/zshrc ~/.zshrc
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/.dotfiles/powerline ~/.config
 ```
 
 * install oh-my-zsh
@@ -51,19 +50,6 @@ git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
 brew install tmux
 ```
 
-* install Paul Hinze’s reattach-to-user-namespace to fix copy/paste in vim
-  running inside tmux
-
-```
-brew install reattach-to-user-namespace --wrap-pbcopy-and-pbpaste
-```
-
-* install psutils required for some segments like cpu_percent
-
-```
-pip install psutils
-```
-
 * install powerline patched fonts
 
 ```
@@ -82,6 +68,6 @@ pip install psutils
 
 ## LICENSE
 
-Copyright © 2013-2018 Francisco De La Cruz. 
+Copyright © 2020 Francisco De La Cruz.
 
 This is free software and may be redistributed under the terms specified in the [LICENSE](LICENSE) file.

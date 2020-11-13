@@ -44,6 +44,20 @@ git clone https://github.com/gmarik/Vundle.vim.git .vim/bundle/Vundle.vim
 
 * to install from command line: `vim +PluginInstall +qall`
 
+* install fixers and linters for dense-analysis/ale
+
+```
+# JavaScript
+npm install -g prettier-standard
+npm install -g standard
+
+
+# Python
+pip3 install --upgrade flake8
+pip3 install --upgrade autopep8
+
+````
+
 * install tmux
 
 ```

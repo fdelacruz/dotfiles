@@ -293,9 +293,6 @@ let g:netrw_liststyle = 3
 let g:netrw_winsize   = 30
 let g:netrw_localrmdir='rm -r'
 
-" Ag
-map <Leader>A :Ag<SPACE>
-
 " Gundo
 let g:gundo_prefer_python3 = 1
 nnoremap <F5> :GundoToggle<CR>

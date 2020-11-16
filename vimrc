@@ -363,8 +363,7 @@ let g:ale_lint_on_save             = 1
 let g:ale_lint_on_text_changed     = 'never'
 
 " completor.vim
-" let g:completor_python_binary = '/usr/local/bin/python3'
-let g:completor_python_binary = '/usr/local/opt/python@3.8/bin/python3'
+let g:completor_python_binary = '/usr/local/bin/python3'
 let g:completor_node_binary = '/usr/local/bin/node'
 
 " vim-gitgutter

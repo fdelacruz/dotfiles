@@ -56,7 +56,12 @@ npm install -g standard
 pip3 install --upgrade flake8
 pip3 install --upgrade autopep8
 
-````
+```
+* install ripgrep
+
+```
+brew install ripgrep
+```
 
 * install tmux
 

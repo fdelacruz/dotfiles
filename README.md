@@ -25,10 +25,12 @@ ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 git clone git@github.com:fdelacruz/oh-my-zsh.git .oh-my-zsh
 ```
 
-* install zaw
+* install zsh-users plugins
 
 ```
 git clone git@github.com:zsh-users/zaw.git ~/.oh-my-zsh/custom/plugins/zaw
+git clone git@github.com:zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+git clone git@github.com:zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
 * install Vundle

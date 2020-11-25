@@ -59,6 +59,13 @@ pip3 install --upgrade flake8
 pip3 install --upgrade autopep8
 
 ```
+
+* install virtualenvwrapper
+
+```
+pip3 install --upgrade virtualenvwrapper
+```
+
 * install ripgrep
 
 ```

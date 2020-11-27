@@ -70,15 +70,6 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 
-# nodemon
-#alias nodemon='nodemon -L'
-
-# serve current directory from command line
-function serve {
-port="${1:-4000}"
-ruby -run -e httpd . -p $port
-}
-
 # improve the behavior of the cd command in git repos
 _git_cd () {
   if [[ "$1" != "" ]]; then

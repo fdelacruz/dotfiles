@@ -8,7 +8,7 @@ This repo is a collection of my zsh, vim, and tmux customizations
 
 ```
 cd ~
-git clone git@github.com:fdelacruz/dotfiles.git .dotfiles
+git clone https://github.com/fdelacruz/dotfiles.git .dotfiles
 ```
 
 * create symbolic links to config files
@@ -22,15 +22,15 @@ ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 * install oh-my-zsh
 
 ```
-git clone git@github.com:fdelacruz/oh-my-zsh.git .oh-my-zsh
+git clone https://github.com/fdelacruz/oh-my-zsh.git .oh-my-zsh
 ```
 
 * install zsh-users plugins
 
 ```
-git clone git@github.com:zsh-users/zaw.git ~/.oh-my-zsh/custom/plugins/zaw
-git clone git@github.com:zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
-git clone git@github.com:zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zaw.git ~/.oh-my-zsh/custom/plugins/zaw
+git clone https://github.com/zsh-users/zsh-completions.git ~/.oh-my-zsh/custom/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 ```
 
 * install Vundle

@@ -10,6 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'sheerun/vim-polyglot'
 
+Plugin 'vim-test/vim-test'
+
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jasoncodes/ctrlp-modified.vim'
 

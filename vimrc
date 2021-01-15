@@ -227,7 +227,7 @@ map <leader>v :view %%
 command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
 
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+" nmap <leader>l :set list!<CR>
 
 "                              Plugins Configuration
 " vim-colors-solarized
@@ -369,3 +369,10 @@ let g:completor_node_binary = '/usr/local/bin/node'
 " vim-gitgutter
 highlight! link SignColumn LineNr
 let g:gitgutter_grep = 'rg'
+
+" vim-test
+nmap <silent> <leader>t :TestNearest<CR>
+nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>a :TestSuite<CR>
+nmap <silent> <leader>l :TestLast<CR>
+nmap <silent> <leader>g :TestVisit<CR>

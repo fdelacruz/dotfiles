@@ -101,7 +101,7 @@ export PATH=/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$P
 
 # vi-mode
 # kill the  delay
-export KEYTIMEOUT=1
+export KEYTIMEOUT=15
 
 # set default editor
 export EDITOR=vim

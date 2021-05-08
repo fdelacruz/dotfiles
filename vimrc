@@ -345,6 +345,7 @@ let g:ale_fixers = {
 \  'javascript': ['prettier-standard'],
 \  'python':     ['autopep8'],
 \  'json':       ['prettier'],
+\  'html':       ['prettier'],
 \}
 let g:ale_linters = {
 \  'css':        ['csslint'],

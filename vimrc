@@ -379,3 +379,7 @@ nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 
 let g:test#python#pyunit#executable = 'python3 -m unittest'
+
+" ctags
+set tags=tags
+autocmd BufWritePost *.py silent! !ctags -R --python-kinds=-i --languages=python 2>/dev/null &

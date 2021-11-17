@@ -323,10 +323,6 @@ nnoremap <space>go :Git checkout<Space>
 nnoremap <space>gps :Dispatch! git push<CR>
 nnoremap <space>gpl :Dispatch! git pull<CR>
 
-" gitv
-nnoremap <space>gvv :Gitv<CR>
-nnoremap <space>gvV :Gitv!<CR>
-
 " easyclip
 let g:EasyClipUseSubstituteDefaults = 1
 

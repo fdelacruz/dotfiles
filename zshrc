@@ -41,6 +41,7 @@ plugins=(
   history-substring-search
   zsh-autosuggestions
   zsh-syntax-highlighting
+  command-not-found
   fzf
 )
 
@@ -75,8 +76,6 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-alias vi=/usr/local/bin/vim
-
 # Some tmux-related shell aliases
 
 # Attaches tmux to the last session; creates a new session if none exists.
@@ -105,7 +104,7 @@ IRCNICK=fdelacruz
 IRC_SERVERS_FILE=~/ircII.servers
 export IRCNICK IRC_SERVERS_FILE
 
-export PATH=/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
+export PATH=/home/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/.local/bin:$PATH
 
 # vi-mode
 # kill the  delay
@@ -136,9 +135,6 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# load z
-. `brew --prefix`/etc/profile.d/z.sh
-
 # postgresql
 alias pg-start='pg_ctl -D /usr/local/var/postgres start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
@@ -150,3 +146,6 @@ alias py='/usr/local/bin/python3.11'
 # more shell history
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
+
+# load z
+. /usr/local/bin/z/z.sh

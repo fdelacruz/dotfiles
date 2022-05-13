@@ -61,6 +61,20 @@ export LANG=en_US.UTF-8
 
 alias vi=/usr/local/bin/vim
 
+# Some tmux-related shell aliases
+
+# Attaches tmux to the last session; creates a new session if none exists.
+alias t='tmux attach || tmux new-session'
+
+# Attaches tmux to a session (example: ta portal)
+alias ta='tmux attach'
+
+# Creates a new session
+alias tn='tmux new-session'
+
+# Lists all ongoing sessions
+alias tl='tmux list-sessions'
+
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help

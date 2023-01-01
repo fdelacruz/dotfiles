@@ -165,3 +165,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias pg-start='pg_ctl -D /usr/local/var/postgres start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
 alias pg-restart='pg_ctl -D /usr/local/var/postgres restart'
+
+# python3
+alias py='/usr/local/bin/python3.11'

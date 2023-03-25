@@ -118,8 +118,8 @@ export PATH=/Users/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$P
 export KEYTIMEOUT=15
 
 # set default editor
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=lvim
+export VISUAL=lvim
 
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word

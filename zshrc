@@ -155,12 +155,6 @@ zstyle ':filter-select' extended-search yes
 # load z
 . `brew --prefix`/etc/profile.d/z.sh
 
-# virtualenvwrapper.sh
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
-
 # postgresql
 alias pg-start='pg_ctl -D /usr/local/var/postgres start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'

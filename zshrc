@@ -41,6 +41,7 @@ plugins=(
   zsh-completions
   history-substring-search
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )
 
 fpath=(/usr/local/share/zsh-completions $fpath)

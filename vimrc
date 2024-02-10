@@ -230,19 +230,16 @@ command! InsertTime :normal a<c-r>=strftime('%F %H:%M:%S.0 %z')<cr>
 " nmap <leader>l :set list!<CR>
 
 "                              Plugins Configuration
-" vim-colors-solarized
+" catppuccin
+
 syntax enable
-set background=dark
-let g:solarized_contrast='normal'
-let g:solarized_diffmode='high'                    " Excellent for :Gdiff
-let g:solarized_visibility='low'
-colorscheme solarized
+colorscheme catppuccin_mocha
 
 " Change the default value of cterm as of vim patch 8.1.2029
 highlight CursorLineNr cterm=bold ctermfg=012
 
 " vim-airline
-let g:airline_theme='solarized_light'
+let g:airline_theme = 'catppuccin_mocha'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
@@ -256,9 +253,6 @@ set termencoding=utf-8
 
 set laststatus=2
 set noshowmode
-
-" Toggle background function
-call togglebg#map("<F4>")
 
 " Ack
 if executable('rg')

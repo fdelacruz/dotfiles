@@ -35,7 +35,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-obsession'
 
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'catppuccin/vim', { 'as': 'catppuccin' }
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'

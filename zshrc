@@ -104,7 +104,7 @@ IRCNICK=fdelacruz
 IRC_SERVERS_FILE=~/ircII.servers
 export IRCNICK IRC_SERVERS_FILE
 
-export PATH=/home/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/.local/bin:$PATH
+export PATH=/home/fdelacruz/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/home/fdelacruz/.local/bin:$PATH
 
 # vi-mode
 # kill the  delay

@@ -141,7 +141,7 @@ alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
 alias pg-restart='pg_ctl -D /usr/local/var/postgres restart'
 
 # python3
-alias py='/usr/local/bin/python3.11'
+alias py='/usr/bin/python3'
 
 # more shell history
 HISTSIZE=100000

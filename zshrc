@@ -135,11 +135,6 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# postgresql
-alias pg-start='pg_ctl -D /usr/local/var/postgres start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
-alias pg-restart='pg_ctl -D /usr/local/var/postgres restart'
-
 # python3
 alias py='/usr/bin/python3'
 

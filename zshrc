@@ -53,6 +53,8 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^ ' autosuggest-accept
 bindkey '^_' autosuggest-clear
 
+zstyle ':omz:alpha:lib:git' async-prompt no
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

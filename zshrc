@@ -165,5 +165,5 @@ alias pg-restart='pg_ctl -D /usr/local/var/postgres restart'
 alias py='/usr/local/bin/python3.11'
 
 # more shell history
-export HISTSIZE=100000
-export SAVEHIST=$HISTSIZE
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE

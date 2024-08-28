@@ -37,12 +37,16 @@ export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color [nya
 plugins=(
   git
   vi-mode
-  zaw
   zsh-completions
   history-substring-search
   zsh-autosuggestions
   zsh-syntax-highlighting
+  fzf
 )
+
+# fzf
+export FZF_DEFAULT_OPTS="--layout=reverse --height=50% --info=inline --border"
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -144,16 +148,6 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
-
-# incremental history search using zaw
-bindkey '^R' zaw-history
-bindkey -M filterselect '^R' down-line-or-history
-bindkey -M filterselect '^S' up-line-or-history
-bindkey -M filterselect '^E' accept-search
-
-zstyle ':filter-select' max-lines 10
-zstyle ':filter-select' case-insensitive yes
-zstyle ':filter-select' extended-search yes
 
 # load z
 . `brew --prefix`/etc/profile.d/z.sh

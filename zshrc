@@ -87,7 +87,6 @@ autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
 alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.rename(f, f.gsub(a, b)) }"'
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 

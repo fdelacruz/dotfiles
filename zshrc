@@ -45,8 +45,17 @@ plugins=(
 )
 
 # fzf
+export FZF_DEFAULT_COMMAND="fd --type f --color=never --hidden"
 export FZF_DEFAULT_OPTS="--layout=reverse --height=50% --info=inline --border"
-export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
+
+# export FZF_CTRL_T__COMMAND="$FZF_DEFAULT_COMMAND" # set by ohmyzsh
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
+
+export FZF_ALT_C_COMMAND="fd --type d . --color=never --hidden --follow \
+  --exclude .git \
+  --exclude node_modules \
+  --exclude venv"
+export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 

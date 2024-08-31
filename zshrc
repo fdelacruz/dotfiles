@@ -99,27 +99,6 @@ alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.r
 alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
 alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
 
-# improve the behavior of the cd command in git repos
-_git_cd () {
-  if [[ "$1" != "" ]]; then
-    cd "$@"
-  else
-    local OUTPUT
-    OUTPUT="$(git rev-parse --show-toplevel 2>/dev/null)"
-    if [[ -e "$OUTPUT" ]]; then
-      if [[ "$OUTPUT" != "$(pwd)" ]]; then
-        cd "$OUTPUT"
-      else
-        cd
-      fi
-    else
-      cd 
-    fi
-  fi
-}
-
-alias cd=_git_cd
-
 # IRC
 # IRCNICK=slocate
 IRCNICK=fdelacruz

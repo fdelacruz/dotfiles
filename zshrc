@@ -144,3 +144,9 @@ SAVEHIST=$HISTSIZE
 
 # load z
 . /usr/local/bin/z/z.sh
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

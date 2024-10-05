@@ -43,6 +43,7 @@ plugins=(
   zsh-syntax-highlighting
   command-not-found
   fzf
+  poetry
 )
 
 # fzf

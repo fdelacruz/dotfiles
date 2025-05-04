@@ -28,9 +28,10 @@ git clone https://github.com/fdelacruz/oh-my-zsh.git .oh-my-zsh
 * install zsh-users plugins
 
 ```
-git clone https://github.com/zsh-users/zaw.git ~/.oh-my-zsh/custom/plugins/zaw
-git clone https://github.com/zsh-users/zsh-completions.git ~/.oh-my-zsh/custom/plugins/zsh-completions
-git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zaw.git ~/.ohmyzsh/custom/plugins/zaw
+git clone https://github.com/zsh-users/zsh-completions.git ~/.ohmyzsh/custom/plugins/zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.ohmyzsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.ohmyzsh/custom/plugins/zsh-syntax-highlighting
 ```
 
 * install Vundle

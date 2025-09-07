@@ -159,3 +159,8 @@ alias py='/usr/local/bin/python3.11'
 # more shell history
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
+
+# alacritty
+preexec() {  # runs before a command
+  print -Pn "\e]0; $1\a"
+}

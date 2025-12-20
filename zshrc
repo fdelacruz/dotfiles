@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.ohmyzsh
 
@@ -86,10 +88,6 @@ export FZF_ALT_C_OPTS="--preview 'ls -la {} | head -20'"
 # ========================================
 bindkey -v
 export KEYTIMEOUT=15
-
-# Ctrl+Space completion (vi insert + normal)
-bindkey -M viins '^@' complete-word
-bindkey -M vicmd '^@' complete-word
 
 # History substring search
 bindkey '^[[A' history-substring-search-up
@@ -193,3 +191,5 @@ nvm() {
 # ========================================
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+zprof > ~/.zprof.after

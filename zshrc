@@ -54,7 +54,6 @@ plugins=(
   history-substring-search
   zsh-autosuggestions
   fzf
-  poetry
 )
 
 # Load Oh-My-Zsh

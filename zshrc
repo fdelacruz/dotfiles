@@ -193,3 +193,9 @@ export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 zprof > ~/.zprof.after
+
+# Display Fastfetch once per interactive shell
+if [[ -o interactive ]] && [[ -z "$FASTFETCH_SHOWN" ]]; then
+    export FASTFETCH_SHOWN=1
+    fastfetch
+fi

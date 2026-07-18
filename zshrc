@@ -157,6 +157,11 @@ alias py='/usr/bin/python3'
 ########################################
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
 
 # ========================================
 # FAST DIRECTORY JUMP (z)

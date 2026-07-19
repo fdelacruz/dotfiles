@@ -169,19 +169,6 @@ setopt HIST_SAVE_NO_DUPS
 . /usr/local/bin/z/z.sh
 
 # ========================================
-# PYENV (lazy load)
-# ========================================
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-
-pyenv() {
-  unset -f pyenv
-  eval "$("$PYENV_ROOT/bin/pyenv" init -)"
-  eval "$("$PYENV_ROOT/bin/pyenv" virtualenv-init -)"
-  pyenv "$@"
-}
-
-# ========================================
 # NVM (lazy load)
 # ========================================
 nvm() {

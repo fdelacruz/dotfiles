@@ -54,6 +54,7 @@ plugins=(
   history-substring-search
   zsh-autosuggestions
   fzf
+  zsh-syntax-highlighting
 )
 
 # Load Oh-My-Zsh

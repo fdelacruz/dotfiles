@@ -170,13 +170,9 @@ setopt HIST_SAVE_NO_DUPS
 . /usr/local/bin/z/z.sh
 
 # ========================================
-# NVM (lazy load)
+# FNM - Fast and simple Node.js version manager, built in Rust
 # ========================================
-nvm() {
-  unset -f nvm node npm
-  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-  nvm "$@"
-}
+eval "$(fnm env --use-on-cd --shell zsh)"
 
 # ========================================
 # FLY.IO CLI

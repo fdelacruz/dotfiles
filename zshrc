@@ -1,5 +1,3 @@
-zmodload zsh/zprof
-
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.ohmyzsh
 
@@ -180,7 +178,6 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
-zprof > ~/.zprof.after
 
 # Display Fastfetch once per interactive shell
 if [[ -o interactive ]] && [[ -z "$FASTFETCH_SHOWN" ]]; then

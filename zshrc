@@ -58,9 +58,7 @@ plugins=(
 # Load Oh-My-Zsh
 source $ZSH/oh-my-zsh.sh
 
-# ========================================
 # FZF (optimized)
-# ========================================
 export FZF_DEFAULT_COMMAND="fd --type f --color=never --hidden"
 export FZF_DEFAULT_OPTS=" \
 --layout=reverse \
@@ -81,9 +79,7 @@ export FZF_ALT_C_COMMAND="fd --type d . --color=never --hidden --follow \
   --exclude venv"
 export FZF_ALT_C_OPTS="--preview 'ls -la {} | head -20'"
 
-# ========================================
 # VI MODE & KEYBINDINGS
-# ========================================
 bindkey -v
 export KEYTIMEOUT=15
 
@@ -101,14 +97,11 @@ zstyle ':omz:alpha:lib:git' async-prompt no
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# set default editor
+# Set default editor
 export EDITOR=nvim
 export VISUAL=nvim
 
-# ========================================
 # TMUX ALIASES
-# ========================================
-
 alias t='tmux attach || tmux new-session'
 alias ta='tmux attach'
 alias tn='tmux new-session'
@@ -151,9 +144,7 @@ bindkey '^Z' fancy-ctrl-z
 # python3
 alias py='/usr/bin/python3'
 
-########################################
 # HISTORY
-########################################
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 setopt EXTENDED_HISTORY
@@ -162,19 +153,13 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
 
-# ========================================
 # FAST DIRECTORY JUMP (z)
-# ========================================
 . /usr/local/bin/z/z.sh
 
-# ========================================
 # FNM - Fast and simple Node.js version manager, built in Rust
-# ========================================
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-# ========================================
 # FLY.IO CLI
-# ========================================
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 

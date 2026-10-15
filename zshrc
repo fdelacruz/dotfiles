@@ -178,6 +178,17 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 export FLYCTL_INSTALL="$HOME/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
+# Watch a Python script and rerun it on changes
+pywatch() {
+    local file="$1"
+
+    if [[ -z "$file" ]]; then
+        echo "Usage: pywatch <filename.py>"
+        return 1
+    fi
+
+    ls "$file" | entr -r python "$file"
+}
 
 # Display Fastfetch once per interactive shell
 if [[ -o interactive ]] && [[ -z "$FASTFETCH_SHOWN" ]]; then

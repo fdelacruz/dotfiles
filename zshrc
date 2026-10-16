@@ -172,7 +172,7 @@ pywatch() {
         return 1
     fi
 
-    ls "$file" | entr -r python "$file"
+    ls "$file" | entr -r sh -c 'clear && python "$1"' _ "$file"
 }
 
 # Display Fastfetch once per interactive shell

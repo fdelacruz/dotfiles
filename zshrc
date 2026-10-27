@@ -69,6 +69,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Prevent broken prompt in alpha theme by disabling async Git status.
+zstyle ':omz:alpha:lib:git' async-prompt no
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -134,7 +137,6 @@ bindkey '^[[B' history-substring-search-down
 bindkey '^ ' autosuggest-accept
 bindkey '^_' autosuggest-clear
 
-zstyle ':omz:alpha:lib:git' async-prompt no
 
 # TMUX ALIASES
 alias t='tmux attach || tmux new-session'

@@ -1,50 +1,110 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.ohmyzsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="fdelacruz"
 
-# Set to this to use case-sensitive completion
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable bi-weekly auto-update checks
-DISABLE_AUTO_UPDATE="true"
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
-# Uncomment following line if you want to disable colors in ls
+# Uncomment the following line to change the frequency the auto-updater is run (in days).
+# zstyle ':omz:update' frequency 13
+
+# Uncomment the following line to set how old an update must be before it's applied, manually or via the auto-updater (in days).
+# zstyle ':omz:update' cooldown 10
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Uncomment the following line to disable auto-setting terminal title.
 DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
+# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Prevent broken prompt in alpha theme by disabling async Git status.
+zstyle ':omz:alpha:lib:git' async-prompt no
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  vi-mode
+  history-substring-search
+  zsh-autosuggestions
+  fzf
+  zsh-syntax-highlighting
+)
+
+# Load Oh-My-Zsh
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 # Add color to the prompt
 autoload -U colors && colors
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color [nyae] "
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(
-  git
-  vi-mode
-  zsh-completions
-  history-substring-search
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  fzf
-)
-
-# fzf
+# FZF (optimized)
 export FZF_DEFAULT_COMMAND="fd --type f --color=never --hidden"
 export FZF_DEFAULT_OPTS=" \
     --layout=reverse \
@@ -57,72 +117,42 @@ export FZF_DEFAULT_OPTS=" \
     --color=selected-bg:#45475A \
     --color=border:#6C7086,label:#CDD6F4"
 
-# export FZF_CTRL_T__COMMAND="$FZF_DEFAULT_COMMAND" # set by ohmyzsh
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :50 {}'"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --line-range :20 {}'"
 
 export FZF_ALT_C_COMMAND="fd --type d . --color=never --hidden --follow \
   --exclude .git \
   --exclude node_modules \
   --exclude venv"
-export FZF_ALT_C_OPTS="--preview 'tree -C {} | head -50'"
+export FZF_ALT_C_OPTS="--preview 'ls -la {} | head -20'"
 
-fpath=(/usr/local/share/zsh-completions $fpath)
-
+# VI MODE & KEYBINDINGS
 bindkey -v
+export KEYTIMEOUT=15
+
+# History substring search
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Autosuggestions
 bindkey '^ ' autosuggest-accept
 bindkey '^_' autosuggest-clear
 
-zstyle ':omz:alpha:lib:git' async-prompt no
 
-source $ZSH/oh-my-zsh.sh
-
-# Customize to your needs...
-
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
-alias vi=/usr/local/bin/vim
-
-# Some tmux-related shell aliases
-
-# Attaches tmux to the last session; creates a new session if none exists.
+# TMUX ALIASES
 alias t='tmux attach || tmux new-session'
-
-# Attaches tmux to a session (example: ta portal)
 alias ta='tmux attach'
-
-# Creates a new session
 alias tn='tmux new-session'
-
-# Lists all ongoing sessions
 alias tl='tmux list-sessions'
 
 unalias run-help 2> /dev/null
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
-alias rubyrename='ruby -e "a = ARGV.shift; b = ARGV.shift; ARGV.each{ |f| File.rename(f, f.gsub(a, b)) }"'
-alias lockDock='defaults write com.apple.dock contents-immutable -bool true && killall Dock'
-alias unlockDock='defaults write com.apple.dock contents-immutable -bool false && killall Dock'
-
 # IRC
 # IRCNICK=slocate
 IRCNICK=fdelacruz
 IRC_SERVERS_FILE=~/ircII.servers
 export IRCNICK IRC_SERVERS_FILE
-
-export PATH=$HOME/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH
-
-# vi-mode
-# kill the  delay
-export KEYTIMEOUT=15
-
-# set default editor
-export EDITOR=nvim
-export VISUAL=nvim
 
 # insert last word with "alt+."
 bindkey '\e.' insert-last-word
@@ -145,22 +175,35 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# load z
-. `brew --prefix`/etc/profile.d/z.sh
-
-# postgresql
-alias pg-start='pg_ctl -D /usr/local/var/postgres start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop'
-alias pg-restart='pg_ctl -D /usr/local/var/postgres restart'
-
-# python3
-alias py='/usr/local/bin/python3.11'
-
-# more shell history
+# HISTORY
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
 
-# alacritty
-preexec() {  # runs before a command
-  print -Pn "\e]0; $1\a"
+# FAST DIRECTORY JUMP (z)
+. /usr/local/bin/z/z.sh
+
+# FNM - Fast and simple Node.js version manager, built in Rust
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# Watch a Python script and rerun it on changes
+pywatch() {
+    local file="$1"
+
+    if [[ -z "$file" ]]; then
+        echo "Usage: pywatch <filename.py>"
+        return 1
+    fi
+
+    ls "$file" | entr -r sh -c 'clear && python "$1"' _ "$file"
 }
+
+# Display Fastfetch once per interactive shell
+if [[ -o interactive ]] && [[ -z "$FASTFETCH_SHOWN" ]]; then
+    export FASTFETCH_SHOWN=1
+    fastfetch
+fi

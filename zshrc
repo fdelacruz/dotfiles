@@ -190,10 +190,6 @@ setopt HIST_SAVE_NO_DUPS
 # FNM - Fast and simple Node.js version manager, built in Rust
 eval "$(fnm env --use-on-cd --shell zsh)"
 
-# FLY.IO CLI
-export FLYCTL_INSTALL="$HOME/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
 # Watch a Python script and rerun it on changes
 pywatch() {
     local file="$1"

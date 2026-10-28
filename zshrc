@@ -185,7 +185,7 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_SAVE_NO_DUPS
 
 # FAST DIRECTORY JUMP (z)
-. /usr/local/bin/z/z.sh
+. ~/.local/share/z/z.sh
 
 # FNM - Fast and simple Node.js version manager, built in Rust
 eval "$(fnm env --use-on-cd --shell zsh)"

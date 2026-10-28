@@ -175,9 +175,6 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-# python3
-alias py='/usr/bin/python3'
-
 # HISTORY
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE

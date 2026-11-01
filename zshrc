@@ -117,7 +117,7 @@ export FZF_DEFAULT_OPTS=" \
     --color=selected-bg:#45475A \
     --color=border:#6C7086,label:#CDD6F4"
 
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range :50 {}' --bind 'ctrl-o:execute(nvim {})+abort'"
+export FZF_CTRL_T_OPTS="--preview 'bat --color=always --theme=\"Catppuccin Mocha\" --style=numbers --line-range :50 {}' --bind 'ctrl-o:execute(nvim {})+abort'"
 export FZF_ALT_C_COMMAND="fd --type d . --color=never --hidden --follow \
   --exclude .git \
   --exclude node_modules \

@@ -122,7 +122,7 @@ export FZF_ALT_C_COMMAND="fd --type d . --color=never --hidden --follow \
   --exclude .git \
   --exclude node_modules \
   --exclude venv"
-export FZF_ALT_C_OPTS="--preview 'ls -la {} | head -20'"
+export FZF_ALT_C_OPTS="--preview 'ls --color=always -la {} | head -20'"
 
 # VI MODE & KEYBINDINGS
 bindkey -v
